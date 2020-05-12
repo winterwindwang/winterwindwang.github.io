@@ -1,12 +1,12 @@
 # Site settings
-title: 闫肃的博客
-email: suyan0830@gmail.com
+title: freeneuro的博客
+email: soft.wdh.craftman@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  闫肃的博客
+  freeneuro的博客
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: http://yansu.org # the base hostname & protocol for your site
+#url: http://yansu.org # the base hostname & protocol for your site
 rss_url: /pages/feed.xml
-author: Su Yan
+author: freeneuro
 
 # Sidebar filter
 # Choose 'tag' or 'category' as filter in sidebar.
@@ -14,15 +14,15 @@ filter: 'category'
 recent_num: 20
 
 # Social account
-twitter: suyan404
-weibo: suyan0830
-github: suyan
-instagram: suyan404
-linkedin: suyan404
+twitter: breezingguy
+weibo: freeneuro
+github: winterwindwang
+instagram: freeneuro041236
+#linkedin: suyan404
 
 # avatar and Favicon
-avatar: http://imgs.yansu.org/site-avatar.png
-favicon: http://imgs.yansu.org/site-favicon.ico
+#avatar: http://imgs.yansu.org/site-avatar.png
+#favicon: http://imgs.yansu.org/site-favicon.ico
 
 # disqus config
 # disqus:
