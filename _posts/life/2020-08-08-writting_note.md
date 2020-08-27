@@ -46,3 +46,8 @@ design two versions of perturbation-generators to attack the search regions and 
 3. The remaining article also follows the same definitions of the terms. 表述某个符号或者定义在下文不发生变化
 
 4. laboratory setting, in the digital world.
+
+### Matching Networks for One Shot Learning
+
+1. 规则的单词：criterion, regime, strategy
+2. more precisely, more specifically
