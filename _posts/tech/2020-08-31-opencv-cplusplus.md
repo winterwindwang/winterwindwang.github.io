@@ -27,11 +27,11 @@ keywords: React
 
 1. 打开CMake的GUI界面，并将`sources`和`build(推荐使用build目录)`两个目录配置到如图位置
    ![路径配置](https://winterwindwang.github.io/assets/img/2020-08-31-CMake_build_opencv.png)
-
 2. 然后点击`configure`，第一次会让你选择编译的平台，如果是64位的机器的话，需要将`Optional platform for generator(if empty, generator uses:win32)`设置成`x64`
 3. 完成后会进行编译，需要等一会。
 4. 编译完成后，找到OPENCV_EXTRA_MODULES_PATH,并选择刚刚复制到`sources`文件中的`contrib`
-5. 也会出现几个错误。
+5. **关键** 找到`BUILD_opncv_world`并且勾选它，否则，直接编译点击`Generate`会生成很多独立的依赖库[1][1]
+6. 也会出现几个错误。
 
 ## 错误以及解决办法
 
@@ -65,7 +65,7 @@ CMake Warning at cmake/OpenCVDownload.camke:202(message):
 
 ![问题解决](https://winterwindwang.github.io/assets/img/2020-08-31-solvemethod.png)
 
-然后，依次完成其他文件的下载。这里需要提一下，有些文本文件是直接显示在网页上的。这时不能自己新建一个文件，如不能自己新建一个文本文件然后重名成`ffmpeg_version.cmake`。（因为编译会校验md5码，自己新建的话就会不一样）。正确的做法是：在显示的网页上右击选择另存为文件，然后在后续修改成`ffmpeg_version.cmake`文件
+然后，依次完成其他文件的下载。这里需要提一下，有些文本文件是直接显示在网页上的。这时不能自己新建一个文件，如不能自己新建一个文本文件然后重名成`ffmpeg_version.cmake`。（因为编译会校验md5码，自己新建的话就会不一样）。正确的做法是：在显示的网页上右击选择另存为文件，然后在后续修改成`ffmpeg_version.cmake`文件。[2][2]
 
 接着，按上面的方法，依次完成对`D:/download/opencv/sources/.cache/`文件夹下其他文件的修改
 
@@ -99,4 +99,22 @@ CMake Warning at cmake/OpenCVDownload.camke:202(message):
 
 ## 待续
 
-完成examples,以及验证contrib能否起作用
+1、将`xxxxx...\opencv-4.4\build\x64\vc15\bin`添加到系统环境变量path中
+
+2、新建控制台项目，设置相关的项目链接库
+
+3、打开项目属性页，首先将`平台`设置成`x64`，然后再`VC++目录`中的`包含目录`添加以下两个目录
+
+```
+xxxxx...\opencv-4.4\build\include
+xxxxx...\opencv-4.4\build\include\opencv2
+```
+
+随后在`库目录`添加`xxxxx...\opencv-4.4\build\x64\vc15\lib`
+
+4、最后，在`链接器`下的`附加依赖项`添`opencv_world440d.lib(Debug)`或者`opencv_world440.lib(Release)`（这两个似乎不能同时配置？）
+
+## 参考
+
+[1]:https://blog.csdn.net/Chris_zhangrx/article/details/79090463
+[2]:https://www.cnblogs.com/huluwa508/p/10142718.html
