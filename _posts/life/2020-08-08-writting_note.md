@@ -41,7 +41,7 @@ design two versions of perturbation-generators to attack the search regions and 
 ### Threat of Adversarial Attacks on Deep Learning in Computer Vision: A Survey
 1. Whereas deep learning **performs** a wide variety of Computer Vision tasks with **remarkable** accuracies
 
-2.  Notice that the perturbations are hardly perceptible for human vision system, however their effects on the deep learning models are **catastrophic**.
+2.  Notice that the perturbations are hardly perceptible for human vision system, however their effects on the deep learning models are catastrophic.
 
 3. The remaining article also follows the same definitions of the terms. 表述某个符号或者定义在下文不发生变化
 
@@ -51,3 +51,27 @@ design two versions of perturbation-generators to attack the search regions and 
 
 1. 规则的单词：criterion, regime, strategy
 2. more precisely, more specifically
+3. improve .... on dataset xx% to xx% and from xx% to xx% dataset compared to competing approaches.
+4. The novelty of our work is twoflod:
+5. we draw inspiration from models such as sequence to sequence with attention.
+6. Unless otherwise specified, training is always on, and test in .. 除非另有说明，
+7. as reported in their paper 引用他人文章数据用语
+8. An obvious drawback of our model is the fact that, 表述方法的缺陷
+
+### One-shot Learning with Memory-Augmented Neural Networks
+
+1. adequately incorporate 充分纳入  
+2. catastrophic interference 灾难性推断
+3. obviate the downside of 消除...的不利因素
+4. The network is tasked to.../The goal of the network is ...网络的任务是/网络的目标是
+5. akin to 类似于
+6. As such 因此
+7. prior to... 先于
+8. in accordance with 依据（后面接公式等）
+
+
+
+
+
+
+
