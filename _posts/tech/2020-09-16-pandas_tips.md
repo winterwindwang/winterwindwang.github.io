@@ -114,4 +114,86 @@ keywork:React
      b  4  5
      ```
 
-4. 
+4. 以上述的例子为例，如果要对某列的值统一进行某个操作，使用lambda函数可以实现：
+
+   ```
+   // 对每列的值加1
+   add_fun = lambda x:x+1
+   df['A'] = df[['A']].apply(add_fun)
+   ```
+
+5. pandas画图特别方便，比如说画折线图
+
+   ```
+   df['A'].plot()
+   // 或者多个特征一起画
+   df[['A','B','c']].plot(subplots=True, figsize=(6,4))
+   // 或者只想画这些特征的某一部分数据
+   df[['A','B','c']][:150].plot(subplots=True, figsize=(6,4))
+   ```
+
+6. 删除某一列
+
+   ```
+   // 删除列为B的那列
+   df = df.drop(column='B')
+   ```
+
+7. 用存表格时不保存行名
+
+   ```
+   数据如下：
+   0   A   B   C   D
+   1   0   1   2   3
+   2   4   5   6   7
+   3   8   9  10  11
+   4  12  13  14  15
+   df.to_excel("file.xlsx", index=False)
+   加了index=False后，数据在xlsx中就没有第一列0-4（不会占用cell）,尽管excel本身会有这样的一个index。
+   ```
+
+8. 读表时应该注意的一些点
+
+   ```
+   文件如下
+   files.xlsx
+   0   A   B   C   D
+   1   0   1   2   3
+   2   4   5   6   7
+   3   8   9  10  11
+   4  12  13  14  15
+   // 直接读取
+   df = pd.read_excel("files.xlsx")
+   读取后,df与上面的数据一样，即df会把第一行的A,B,C,D当作是列名，数据行从 第二行开始
+   // 加参数header
+   df = pd.read_excel("files.xlsx"，sheet_name=sheet_name,header=None)
+   当文件中原本没有列名的情况下，不适用header=None参数，那么pd会把一行数据当成列名
+   所以建议使用如下方法，读取时指定列名
+   df = pd.read_excel("files.xlsx"，sheet_name=sheet_name,names=['A','B','C',D],header=None)
+   ```
+
+9. 滤波器的使用
+
+   ```
+   \\ 低通滤波器
+   def low_pass(df_data, cut_hz=4.0, order=3):
+       Nyqvist_freq = 250 * 0.5
+       b, a = signal.butter(8, cut_hz / Nyqvist_freq, "lowpass")
+       lowpass = lambda x: signal.filtfilt(b,a,x)
+       for flag in flags:
+           df_data[flag]=df_data[[flag]].apply(lowpass)
+       return df_data
+   \\ 高通滤波器
+   def band_pass(df_data, fs=250, low_cut_hz=0.1, high_cut_hz=20, order=3):
+       nyq_freq = 0.5 * fs
+       low = low_cut_hz / nyq_freq
+       high = high_cut_hz / nyq_freq
+       b, a = signal.butter(4, [low, high], btype="bandpass")
+       bandpass = lambda x: signal.filtfilt(b, a, x)
+       for flag in flags:
+           df_data[flag]=df_data[[flag]].apply(bandpass)
+       return df_data
+   ```
+
+   
+
