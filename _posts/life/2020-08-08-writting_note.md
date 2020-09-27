@@ -69,9 +69,24 @@ design two versions of perturbation-generators to attack the search regions and 
 7. prior to... 先于
 8. in accordance with 依据（后面接公式等）
 
+## New High-speed Frame Detection Method: Side Trace Algorithm (STA) for i-appli on Cellular Phones to Detect Watermarks  
+1. the response delay caused by the transmission time presented a problem for the user interface. 由传输时间引起的相应延迟给用户交互引出了一个难题。
+   句式：名词（现象）+ 原因状语 + 谓语 + 宾语 （个人己见）
+2. The drawback to this method is that  这个方法的缺点是
+3. the former , 二者中的前者
+4. A feature point search must be able to *withstand* the effects of this noise 特征点搜索必须能够经受得了这种噪声。
+5. quadrilateral 四边形
+6. bisect 二等分
+7. traversal 遍历
+8. 
 
+## Screen-Shoting Resilient Watermarking
 
-
-
-
+1. traversal 遍历
+2. The reason can be analyzed as follows. 原因解释如下
+3. intensity 强度
+4. As explained previously , 正如之前的解释
+5. The second requirement is motivated by the observation that .... 第二个要求是由以下观察得出：
+6. Similar conclusion can be drawn as that for Dataset8. 可以得出与数据集8相似的实验结论
+7. It is observed that,   可以观察到
 
