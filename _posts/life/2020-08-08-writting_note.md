@@ -90,3 +90,51 @@ design two versions of perturbation-generators to attack the search regions and 
 6. Similar conclusion can be drawn as that for Dataset8. 可以得出与数据集8相似的实验结论
 7. It is observed that,   可以观察到
 
+## The Unreasonable Effectiveness of Deep Features as a Perceptial Metric
+
+1. *The ability to* compare data items *is perhaps the most fundamental* operation underlying all of computing.
+
+   句意：比较数据项的能力也许能所有计算的基础的最基本操作
+
+2. the goal is for the compressed image to be indistinguishable from the original by a human observer， irrespective of the fact that their pixel representations might be very different.
+   句意：压缩图像的目标是尽可能让一个人类观察者感知不到与原始图像的差别，尽管实际上它们像素表示上有一些差别。
+
+3. A well-know example is that blurring causes large perceptual but small $\ell_2$ change.
+   句意：一个显而易见的例子是感知上造成较大模糊的情况下，二范数损失的该变量却很小。
+
+4. Our results are consistent with the hypothesis that perceptual similarity is not a special function all of its own, but rather a *consequence* of visual representations tuned to be predictive about important structure in the world.
+   句意：我们的结果与假设一致：感知相似性并不是其本身的特殊功能，而是视觉表示的结果，这些视觉表示被调整为可预测现实世界的重要结果。
+
+5. We create a set of "traditional" distortions consisting of common operations performed on the input pathches, listed in Table 1. **In general**, we use photometric distortions, random noise, blurring, spatial shifts and corruptions, and compression artifacts. 
+   句意：我们创建了一个”传统“失真集合，包括在输入patches上常用的一些操作。一般而言，我们使用。。。。
+6. In addition, we collect judgements on a large number of 64 x 64 patches rather than a small number of images. **There are three reasons for this**. First,...
+   句意：此外，我们在64x64尺寸的patches集合中收集判断，而不是小数据集。原因是。。。
+7. facto standard   事实标志
+
+## Text-image Watermarking based on Integer Wavelet Transform(IWT) and Discrete Cosine Transform(DCT)
+
+1. Integer Wavelet Transform(IWT) is much faster beacuse it deals only with integers. The image can be reconstructed without any loss using IWT and can be stored without rounding off the error [1]([1])
+   句意：IWT更快，因为它仅处理整数。使用IWT重建图像而不会造成任何损失，并且可以存储图像出现错误？
+2. In this section, watermarking methods which performed on text-image will be discussed and compared. Text-image watermarking methods in the spatial domain are presented first, then watermarking methods which are performed in the transform domain.
+   句意：在本节，将会讨论数字水印用于文本图片的方法。首先介绍空域方法，然后介绍变换域方法。
+
+## Image Demoireing with Learnable Bandpass Filters
+
+1. Through an ablation study, we demonstrate the effectiveness of the different components of Net
+   句意：通过对比实研究，我们证明了网络的不同组件的有效性。
+2. **In this section, we make a breif introduction of **several CNN-based methods in related tasks, where deep learning has made significant impact.
+   句意：在本节，我们简短地介绍了基于CNN方法在相关任务中的工作，这些工作中深度学习方法取得了重大的进展。
+3. L1 loss is more effective than L2 loss for image restoration tasks.
+   句意：在图像重建任务中，L1损失的比L2损失更加有效
+
+
+
+
+
+
+
+
+
+
+
+[1] R. Harshitha, S.S., Vidya, Robust and High Limit Watermarking using DWT-IWT. International Journal of Advanced Scientific Research and Management, 2 (4), pp.18-21, 2017.  
