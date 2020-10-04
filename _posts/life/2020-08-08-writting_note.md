@@ -126,6 +126,23 @@ design two versions of perturbation-generators to attack the search regions and 
    句意：在本节，我们简短地介绍了基于CNN方法在相关任务中的工作，这些工作中深度学习方法取得了重大的进展。
 3. L1 loss is more effective than L2 loss for image restoration tasks.
    句意：在图像重建任务中，L1损失的比L2损失更加有效
+4. Please note: the validation dataset is completely independent and not used in training.
+   句意：请注意：验证集完全独立并且没有在训练中使用
+   *这个可以视情况使用，比如说实验结果都在什么数据集上的*
+5. To verify the effectiveness of each component in our model, we conduct extensive ablation study, including evaluation of MTRB vs. GTMB and LTMB, learnable bandpass filter, and loss function.
+   这段是指出消融实验都包括哪些内容，可以在消融实验标题下的第一段使用。
+6. + The result is mainly caused by two reasons. First, .... ;(用.)Second,...
+     句意：解释某项结果的原因的句式。
+   + There are two reasons for this observation. First, .... ;(用.)Second,...
+     句意：这个观察的原因有两个。
+7. The CNN has **certain** denoising and local smoothing capabilities.
+   句意：CNN**有一定的**去噪和局部平滑能力。
+8. We denote the networks constructed without LP and DDT as MBCNN-nLP and MBCNN-nDDT, respectively.
+   用法：在对网络进行修改的对比实验设置时，可以使用该句法。
+   句意：我们将不带LP或DDT的网络结构分别称为。。。。
+9. We tested  the performance of these three models on validation set of *LCDMoire*.
+   句意：我们在验证机上测试了三个模型的性能。
+10. 
 
 
 
