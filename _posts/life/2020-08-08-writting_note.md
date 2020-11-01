@@ -142,9 +142,22 @@ design two versions of perturbation-generators to attack the search regions and 
    句意：我们将不带LP或DDT的网络结构分别称为。。。。
 9. We tested  the performance of these three models on validation set of *LCDMoire*.
    句意：我们在验证机上测试了三个模型的性能。
-10. 
 
+## 
 
+1. whether the model assigns the perturbed input to some class different from the class label of original input. 
+2. Target misclassification for which the perturbed input has to be classified in a given target class.
+
+## VisCode embedding information in visualization images using encoder-decoder network
+
+1. disseminating 传播
+2. salient feature 显著性特征
+3. The resolution of the output coded image is the same as that of the input carrier image. 
+   句意：输出编码图的分辨率与输入载体图一致
+4. We refer the reader to the ISO/IEC 18004 specification for more technical details of QR codes.
+   句意：
+   在推荐让读者了解某件事的时候可以使用
+5. 
 
 
 
