@@ -157,14 +157,27 @@ design two versions of perturbation-generators to attack the search regions and 
 4. We refer the reader to the ISO/IEC 18004 specification for more technical details of QR codes.
    句意：
    在推荐让读者了解某件事的时候可以使用
-5. 
 
+## Drug repurposing: progress, challenges and recommendations 
 
+1. drug repurposing  药物再利用。 drug repositioning   药物重定位
+2. attrition  损耗
+3. substantial  充实的，坚实，实惠，殷实，物质的
+4. escalating  逐步升级，升高
+5. in generic terms, 一般而言
 
+## Adversarial Learning for Invertible Steganography
 
+1. pristine 原始的
+2. to name but a few 这仅仅是列举的一小部分
+3. Experimental result validated the effectiveness of the proposed method and *showed a significant performance boost*. 实验结果验证了提出方法的有效性和显示了巨大的性能提升。
+4. revisits 回顾
+5. UNet 模型的介绍：It is characterised by it U-shape, which explains the origins of the name, and is comprised of a pair of encoder and decoder with skip connections between mirrored layers. The samples flow from top to bottom through a series of convolutions and downsampling, and then go back through a succession of convolutions and upscaling to full resolution. The skip connections allow multi-resolution feature maps from previous layers to be retained and concatenated with feature maps at later layers.
+6. l1 norm may be preferable to l2 norm for the case of high dimensional data [2]([2]). l1 norm is capable of capture low-frequency structure, if the model solely rests on the l1 norm, the outcome would trend to be blurry since this loss function is minimised by averaging all plausible outputs, thus incentivising a blur when uncertainty encountered in complex areas.
+7. 本文使用GAN完成可逆隐写的任务。具体地说，作者将图像转化成8个位图，根据正则奇数映射（Regular-singular, RS）的原理，将7个无失真的位平面输入到生成器里面，输出一个目标位平面（利用未修改的位平面来预测或合成修改的位平面）。该目标位平面被用于可逆隐写时嵌入和提取的参考位图。最后对生成器的合成图进行了后处理（量化成0-1数据）。**疑问在于**：1、神经网络无法做到完全不失真，这是否符合可逆隐写的规则？2、如果生成器只是用来生成目标参考位图，那么是如何实现隐写和信息提取的？在文中提到一句，“Blocks for carrying message bits was fixed to the size of 2 x 2 pixels”。 所以最终的信息位是否是合成图按2x2大小像素块计算得到的信息？所以最终的逻辑是：输入7个不变的位平面得到可改变的目标位平面，得到目标位平面后呢？与原来7个不变的位平面叠加重建图片？如何实现可逆呢？
 
-
-
-
+## Reference
 
 [1] R. Harshitha, S.S., Vidya, Robust and High Limit Watermarking using DWT-IWT. International Journal of Advanced Scientific Research and Management, 2 (4), pp.18-21, 2017.  
+
+[2]C. C. Aggarwal, A. Hinneburg, and D. A. Keim, “On the surprising behavior of distance metrics in high dimensional space,” in Proceedings of International Conference on Database Theory (ICDT), London, UK, 2001, pp. 420–434.  
