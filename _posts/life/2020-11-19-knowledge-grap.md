@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 读论文，记笔记
+title: 医学知识图谱研究进展
 category: 生活
 tags: Essay
 keywords: 生活,2020
