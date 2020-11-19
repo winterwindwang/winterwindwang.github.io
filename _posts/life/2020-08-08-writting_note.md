@@ -165,6 +165,7 @@ design two versions of perturbation-generators to attack the search regions and 
 3. substantial  充实的，坚实，实惠，殷实，物质的
 4. escalating  逐步升级，升高
 5. in generic terms, 一般而言
+6. underlying/latent features 潜在特征
 
 ## Adversarial Learning for Invertible Steganography
 
