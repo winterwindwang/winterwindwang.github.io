@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用7zip命令进行有条件压缩
-category: 生活
+category: 技术
 tags: 条件压缩
 keywords: 生活,2020
 description: 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 论文回顾：去屏摄摩尔纹
-category: 读论文，记笔记
-tags: image, noise
-keywords: 生活,2020
+category: 文献阅读
+tags: Paper reading
+keywords: 文献阅读,2020
 description: 
 ---
 

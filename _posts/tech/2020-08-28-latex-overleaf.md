@@ -4,7 +4,7 @@ layout: post
 
 titile: Overleaf模板中引用参考文献的方法在TeXstudio中无法显示的问题
 
-category: LaTex, Overleaf简历模板
+category: 写作
 
 tag: React
 

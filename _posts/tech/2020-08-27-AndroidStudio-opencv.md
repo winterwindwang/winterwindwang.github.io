@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AndroidStudio4.0 调用Opencv4.4的相机
-category: 技术, android
+category: 技术
 tags: React
 keywords: React
 --- 

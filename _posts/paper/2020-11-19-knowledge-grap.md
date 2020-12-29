@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 医学知识图谱研究进展
-category: 生活
-tags: Essay
-keywords: 生活,2020
+category: 文献阅读
+tags: Paper reading
+keywords: 文献阅读,2020
 description: 论文
 ---
 
