@@ -1,7 +1,7 @@
 ---
 layout: post
 
-titile:opencv学习笔记（三）
+title: opencv学习笔记（三）
 
 category: 读书
 

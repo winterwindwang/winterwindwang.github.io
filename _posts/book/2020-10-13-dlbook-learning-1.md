@@ -2,7 +2,7 @@
 
 layout: post
 
-titile:DeepLearning读书笔记（一）
+title: DeepLearning读书笔记（一）
 
 category: 读书
 

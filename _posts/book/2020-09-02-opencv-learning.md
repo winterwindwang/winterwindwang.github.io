@@ -2,7 +2,7 @@
 
 layout: post
 
-title:opencv学习笔记
+title: opencv学习笔记
 
 category: 读书
 

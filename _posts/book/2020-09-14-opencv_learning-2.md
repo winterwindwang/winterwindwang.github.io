@@ -2,13 +2,13 @@
 
 layout: post
 
-title:opencv学习笔记(二)
+title: opencv学习笔记(二)
 
 category: 读书
 
 tag: React
 
-keyword: opencv，C++
+keywords: opencv，C++
 
 ---
 
