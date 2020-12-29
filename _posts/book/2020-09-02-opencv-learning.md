@@ -1,15 +1,9 @@
 ---
-
 layout: post
-
 title: opencv学习笔记
-
 category: 读书
-
 tag: React
-
 keywords: opencv，C++
-
 ---
 
 ## opncv 读书笔记（1）
@@ -24,7 +18,7 @@ keywords: opencv，C++
 
    对上面图像中的任何一个图像进行转换都会影响到其他图像。
 
-2. 如果要对图像内容做一个深复制，可以使用copyTo方法，目标图像将会调用create方法。另一个生成图像副本的方法是clone,即创建一个完全相同的新图像:
+2. 如果要对图像内容做一个深复制，可以使用copyTo方法，目标图像将会调用create方法。另一个生成图像副本的方法是clone,即创建一个完全相同的新图像。
 
    ```
    // 这些图像是原始图像的新副本

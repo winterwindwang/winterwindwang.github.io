@@ -1,14 +1,9 @@
 ---
-
 layout: post
-
 title: DeepLearning读书笔记（一）
-
 category: 读书
-
 tag: React
-
-keyword: Deep Learning
+keywords: Deep Learning
 ---
 
 ## Deep Learning读书笔记（一）
