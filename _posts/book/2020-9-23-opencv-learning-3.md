@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 titile:opencv学习笔记（三）
@@ -9,8 +8,7 @@ category: 读书
 tag: opencv， C++
 
 keyword: React
-
-----
+---
 
 ## OpenCV读书笔记(3)
 

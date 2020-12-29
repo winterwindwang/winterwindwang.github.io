@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kaggle 比赛教程
+title: Kaggle 比赛教程（三）
 category: 技术
 tags: React
 keywords: React

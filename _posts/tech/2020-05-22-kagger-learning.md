@@ -1,3 +1,10 @@
+---
+layout: post
+title: Kaggle 课程（一）
+category: 技术
+tags: React
+keywords: React
+---
 ## 线性模型
 
 Tree-based: Deceision Tree, Random Forest, GBDT  推荐（XGBoost和LightGBM,收敛速度快， 准确性较高）, 算法需要去理解

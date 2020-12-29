@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kaggle 课程
+title: Kaggle 课程（二）
 category: 技术
 tags: React
 keywords: React

@@ -1,3 +1,10 @@
+---
+layout: post
+title: Pandas小技巧
+category: 技术
+tags: React
+keywords: React
+---
 ## 按天统计不同类别商品销售占比
 ![avatar](https://winterwindwang.github.io/assets/img/2020-05-25-data1.jpg)
 
