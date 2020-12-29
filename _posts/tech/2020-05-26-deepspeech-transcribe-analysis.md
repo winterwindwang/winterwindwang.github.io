@@ -6,7 +6,7 @@ tags: React
 keywords: React
 ---
 
-## 直觉上DeepSpeech中的transcribe功能中，有关于logits的定义，于是主要分析transcribe.py文件
+## 在DeepSpeech中的transcribe功能中有关logits的定义，主要分析transcribe.py文件
 #!/usr/bin/env python
 
 ```

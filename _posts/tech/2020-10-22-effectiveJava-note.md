@@ -4,9 +4,9 @@ layout: post
 
 titile: Effective Java阅读笔记
 
-category: 技术，Deep Learning
+category: 技术
 
-tag: React
+tag: Deep Learning
 
 keyword: React
 

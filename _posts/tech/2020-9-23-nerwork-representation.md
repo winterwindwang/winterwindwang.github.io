@@ -4,9 +4,9 @@ layout: post
 
 title : 神经网络解释---saliency map
 
-category: 神经网络解释, 网络权重/特征可视化
+category: 技术
 
-tag: React
+tag: 神经网络解释, 网络权重/特征可视化
 
 keywork: React
 

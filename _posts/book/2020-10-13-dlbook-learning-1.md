@@ -4,9 +4,9 @@ layout: post
 
 titile:DeepLearning读书笔记（一）
 
-category: 技术，Deep Learning
+category: 读书
 
-tag: React
+tag: Deep Learning
 
 keyword: React
 

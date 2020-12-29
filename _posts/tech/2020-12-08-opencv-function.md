@@ -4,7 +4,7 @@ layout: post
 
 titile: Opencv findContours()函数
 
-category: 技术，图像处理
+category: 技术
 
 tag: React
 

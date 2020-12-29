@@ -4,9 +4,9 @@ layout: post
 
 title:opencv学习笔记
 
-category: 技术，opencv，C++
+category: 读书
 
-tag: React
+tag: opencv，C++
 
 keyword: React
 

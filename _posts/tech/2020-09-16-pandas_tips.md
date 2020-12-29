@@ -4,9 +4,9 @@ layout: post
 
 title: pandas 使用技巧
 
-category: pandas技巧
+category: 技术
 
-tag: React
+tag: pandas技巧
 
 keywork:React
 
