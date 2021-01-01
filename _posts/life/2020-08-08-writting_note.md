@@ -177,6 +177,9 @@ design two versions of perturbation-generators to attack the search regions and 
 6. l1 norm may be preferable to l2 norm for the case of high dimensional data [2]([2]). l1 norm is capable of capture low-frequency structure, if the model solely rests on the l1 norm, the outcome would trend to be blurry since this loss function is minimised by averaging all plausible outputs, thus incentivising a blur when uncertainty encountered in complex areas.
 7. 本文使用GAN完成可逆隐写的任务。具体地说，作者将图像转化成8个位图，根据正则奇数映射（Regular-singular, RS）的原理，将7个无失真的位平面输入到生成器里面，输出一个目标位平面（利用未修改的位平面来预测或合成修改的位平面）。该目标位平面被用于可逆隐写时嵌入和提取的参考位图。最后对生成器的合成图进行了后处理（量化成0-1数据）。**疑问在于**：1、神经网络无法做到完全不失真，这是否符合可逆隐写的规则？2、如果生成器只是用来生成目标参考位图，那么是如何实现隐写和信息提取的？在文中提到一句，“Blocks for carrying message bits was fixed to the size of 2 x 2 pixels”。 所以最终的信息位是否是合成图按2x2大小像素块计算得到的信息？所以最终的逻辑是：输入7个不变的位平面得到可改变的目标位平面，得到目标位平面后呢？与原来7个不变的位平面叠加重建图片？如何实现可逆呢？
 
++ The forward pass computes a weighted sum of their inputs from the previous layer and pass the result through a non-linear function.
++ The key advantage of deep learning is the capability of representation learning and the semantic composition empowered by both the vector representation and neural processing.
+
 ## Reference
 
 [1] R. Harshitha, S.S., Vidya, Robust and High Limit Watermarking using DWT-IWT. International Journal of Advanced Scientific Research and Management, 2 (4), pp.18-21, 2017.  
