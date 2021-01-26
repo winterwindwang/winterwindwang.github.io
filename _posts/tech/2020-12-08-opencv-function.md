@@ -2,11 +2,11 @@
 
 layout: post
 
-titile: Opencv findContours()函数
+title: Opencv findContours()函数
 
 category: 技术
 
-tag: React
+tags: React
 
 keyword: React
 
