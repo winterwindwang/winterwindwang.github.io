@@ -193,7 +193,7 @@ CRF在NER任务中的取得很好的性能，包括医疗信息提取[20-22]。�
 
 subsumption 包含，包容
 
-##### Patterns Used to Identify Relations in Corpus Using Formal Concept Analysis（FCA） （2015）使用形式概念分析来识别语料库中关系的模式（与上一篇的作者是同一个人）
+#### Patterns Used to Identify Relations in Corpus Using Formal Concept Analysis（FCA） （2015）使用形式概念分析来识别语料库中关系的模式（与上一篇的作者是同一个人）
 
 ##### 摘要
 
