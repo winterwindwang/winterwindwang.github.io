@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: default
 title: 博士研究计划参考文献阅读（川大）
 category: 文献阅读
 tags: paper reading
