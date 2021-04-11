@@ -6,11 +6,9 @@ tags: jupyter notebook, python, torch
 keywords: 
 ---
 
----
 
-`导语：在使用jupyter notebook时，碰到.ipynb文件无法调用文件夹下模块，找了一些方法解决了一些问题，故记录下来`
 
----
+> 导语：在使用jupyter notebook时，碰到.ipynb文件无法调用文件夹下模块，找了一些方法解决了一些问题，故记录下来
 
 假设有如下目录结构
 
