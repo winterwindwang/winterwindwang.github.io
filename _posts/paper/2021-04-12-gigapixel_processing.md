@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【文献阅读（一）Detecting Cancer Metastases on Gigapixel Pathology Images】
+title: 文献阅读（一）Detecting Cancer Metastases on Gigapixel Pathology Images
 category: 文献阅读
 tags: paper reading, Gigapixel medical image processing
 keywords: 文献阅读, 2021
