@@ -44,25 +44,39 @@ keyword: survey, unsupervised learning
 
 + **Cross-entropy(CE)**
 
-  ![]()
+  ![](https://winterwindwang.github.io/assets/img/eq_celoss.png)
 
 + **Contrastive Loss(CL)**
+  ![](https://winterwindwang.github.io/assets/img/eq_clloss.png)
 
 + **Entropy Minimization(EM)**
 
 + **Kullback-Leibler divergence(KL)**
 
+  ![](https://winterwindwang.github.io/assets/img/eq_klloss.png)
+
 + **Mean Squared Error(MSE)**
+
+  ![](https://winterwindwang.github.io/assets/img/eq_mseloss.png)
 
 + **Mutual Information(MI)**
 
+  ![](https://winterwindwang.github.io/assets/img/eq_miloss.png)
+
 + **Virtual Adversarial Training(VAT)**
+
+  ![](https://winterwindwang.github.io/assets/img/eq_vatloss.png)
 
 ##### 概念
 
 + **Mixup(MU)**
+
+  
+
 + **Overclustering(OC)**
+
 + **Pretext Task(PT)**
+
 + **Pseudo-Labels(PL)**
 
 ### 比较（Comparison）
