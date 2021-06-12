@@ -1,9 +1,9 @@
 ---
 layout: post 
-title: 博士研究计划参考文献阅读
+title: 医学图像人工智能综述
 category: 文献阅读
 tags: paper reading
-keywords: 医学实体命名识别、医学实体标准化、医学实体关系抽取
+keywords: 医学人工智能、医学图像处理
 ---
 
 ### Artificial intelligence as the next step towards precision pathology （SCI 2区，2020）人工智能是精密病理学的下一步
