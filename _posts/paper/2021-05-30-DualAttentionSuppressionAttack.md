@@ -2,7 +2,7 @@
 
 layout: post
 
-title: 【论文阅读（一）】Dual Attention Suppression Attack: Generate Adversarial Camouflage in Physical World
+title: 【对抗样本（一）】Dual Attention Suppression Attack: Generate Adversarial Camouflage in Physical World
 
 category: 文献阅读
 
