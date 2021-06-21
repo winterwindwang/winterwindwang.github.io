@@ -1,12 +1,8 @@
 ---
 layout: post
-
 title: 【对抗样本（一）】Dual Attention Suppression Attack: Generate Adversarial Camouflage in Physical World
-
 category: 文献阅读
-
 tags: adversarial attack
-
 keyword: physical world attack, objection segemention
 ---
 
