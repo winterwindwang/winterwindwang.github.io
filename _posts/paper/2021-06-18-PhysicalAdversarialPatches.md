@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【对抗样本(五)】On Physical Adversarial Patches for Object Detection
+title: 【对抗样本（五）】On Physical Adversarial Patches for Object Detection
 category: 文献阅读
 tags: adversarial patches, adversarial attack
 keywords: Object detection, adversarial attack

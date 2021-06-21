@@ -2,7 +2,7 @@
 layout: post
 title: 【对抗样本（三）】Fooling automated surveillance cameras: adversarial patches to attack person detection
 category: 文献阅读
-keywords: adversarial attack, automated surveillance cameras
+tags: adversarial attack, automated surveillance cameras
 ---
 
 > 导语：这是发表在2019年CVPR workshop上的一篇对抗样本攻击的研究，攻击的是自动监控相机。具体而言是用对抗性补丁来攻击行人检测
