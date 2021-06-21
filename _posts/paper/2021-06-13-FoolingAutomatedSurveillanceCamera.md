@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 【对抗样本(三)】Fooling automated surveillance cameras: adversarial patches to attack person detection
-category: 论文阅读
+title: 【对抗样本（三）】Fooling automated surveillance cameras: adversarial patches to attack person detection
+category: 文献阅读
 keywords: adversarial attack, automated surveillance cameras
 ---
 

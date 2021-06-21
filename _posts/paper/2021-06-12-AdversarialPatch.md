@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【对抗样本（二）Adversarial Patch】
+title: 【对抗样本（二）】Adversarial Patch
 category: 文献阅读
 tags: adversarial patch
 ---
