@@ -54,3 +54,31 @@ ls -l | wc -l
 find . -name '*.jpg' | wc -l
 ```
 
+## 3 使用nohup在服务器后台玉运行代码
+
+ 一开始在网上找到了下面这个版本的代码
+
+```
+nohup python -u run.py > log 2>&1 &
+```
+
+但是运行这个代码很快就遇到问题了，使用上述代码会出现 系统会认为`>log 2>&1`是`run.py`中的参数，就会报错。所以采用了如下的形式，该问题就消失了
+
+```
+nohup python ./run.py >> ./train.log 2>&1 &
+```
+
+运行以后吗，可以通过以下代码查看后台在运行的python命令
+
+```
+ps -ef | grep python
+```
+
+关闭nohup后台运行的进程
+
+```
+kill -9 pid
+e.g.
+kill -9 29589
+```
+
