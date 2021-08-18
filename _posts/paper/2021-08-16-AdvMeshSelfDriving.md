@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Exploring Adversarial Robustness of Multi-sensor Perception Systems
-in Self Driving
+title: 【文献阅读】Exploring Adversarial Robustness of Multi-sensor Perception Systems in Self Driving
 category: 文献阅读
 keywords: self-driving, adversarial robustness, adversarial attack
 ---
