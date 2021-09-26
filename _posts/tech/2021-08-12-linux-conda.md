@@ -82,3 +82,17 @@ e.g.
 kill -9 29589
 ```
 
+## 4 Python中Linux和Window的差异
+
+1. os.listdir()
+
+```
+在window中得到的是有序的文件名，如
+listfile = ['a.txt', 'b.txt', 'd.txt', 'z.txt']
+但是在Linux系统中得到的是无序的文件名，如
+listfile = ['d.txt', 'z.txt', 'b.txt', 'a.txt']
+为了减少不同系统照成的差异，建议使用
+listfile = sorted(listfile) 
+对list进行排序
+```
+
