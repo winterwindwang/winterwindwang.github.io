@@ -96,3 +96,16 @@ listfile = sorted(listfile)
 对list进行排序
 ```
 
+## 5 服务器NFS挂载
+
+```
+通过nfs挂载磁盘
+command：
+apt-get update
+apt-get install -y nfs-common
+mkdir -p <新建的路径>
+sudo mount -t nfs 192.168.2.1:<nfs路径> <本地路径>
+例如：进入服务器的情况下运行如下命令
+sudo mount -t nfs 192.168.2.1:/mnt/share1/ mnt/share1/
+```
+
