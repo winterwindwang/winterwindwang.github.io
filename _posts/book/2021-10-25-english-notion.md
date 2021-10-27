@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 英语表述
-category: 书籍
-tags: english
+category: 读书
+tag: React
 keywords: notes
 ---
 
