@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【论文阅读（03）】Medical Transformer: Gated Axial-Attention for Medical Image Segmentation
+title: 【论文阅读（03）】Medical Transformer Gated Axial-Attention for Medical Image Segmentation
 category: 文献阅读
 tags:  paper reading
 keyword: Transformer, Medical image classification, multi-model
