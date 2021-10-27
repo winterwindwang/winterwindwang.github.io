@@ -1,13 +1,9 @@
 ---
 layout: post
-
 title: 深度神经网络实体词识别综述
-
 category: 文献阅读
-
 tags: Paper reading
-
-keywords：deep learning, NER
+keywords: deep learning, NER
 ---
 
 ## A Survey on Deep Learning for Named Entity Recognition  (2020, IEEE TKDE)
