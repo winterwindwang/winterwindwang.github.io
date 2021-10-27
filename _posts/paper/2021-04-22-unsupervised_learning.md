@@ -2,8 +2,7 @@
 layout: post
 title: 论文阅读（二） A Survey on Semi-, Self- and Unsupervised Learning in Image Classification
 category: 文献阅读
-tags: paper reading
-keyword: survey, unsupervised learning 
+tags: paper reading, survey, unsupervised learning 
 ---
 
 > arXiv：
