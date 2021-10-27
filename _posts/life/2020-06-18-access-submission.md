@@ -1,5 +1,5 @@
+# layout: post
 ---
-layout: post
 title: ACCESS: 投稿的一些经历
 category: 生活
 tags: Essay
