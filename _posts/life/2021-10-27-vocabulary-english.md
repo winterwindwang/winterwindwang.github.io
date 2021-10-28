@@ -5,11 +5,178 @@ category: 生活
 keys: 词汇
 ---
 
+## 训练一
+
+1. retreat  n. 撤退；休息寓所；撤退
+   vi. 撤退；退避；向后倾
+   vt. 使后退；退（棋）
+2. retrospect n. 回顾, 回想
+3. foresight  n. 预见, 先见之明;深谋远虑
+4. excised  离体的，切离的
+5. retained  adj. 保留的
+   v. 保留；保存（retain的过去式形式）
+6. grew out of  成长于
+7. be brought on  被带上
+8. be brought into being  被引入
+9. vague  adj. 不明确的；含糊的；模糊的；暧昧的
+10. set off   vt.出发；引起；动身；使爆炸；抵销；分开
+11. set in vi. 开始；到来；流行
+12. set out 出发；开始；陈述；陈列
+13. set by  把…留开
+14. set on 唆使；开始；攻击
+15. brake  vi. 刹车
+    n. 闸，刹车；阻碍
+    vt. 刹车
+16. hammer  vi. 敲打；锤击；重复
+    n. 铁锤；锤骨；音锤；链球
+    vt. 锤打；锤击
+17. antique  adj. 古时制造的, 古董的
+    古代的
+    n. 古玩, 古董, 古物
+18. gorge   n. 胃；峡谷；暴食；咽喉；障碍物
+    vt. 使吃饱；吞下；使扩张
+    vi. 拚命吃；狼吞虎咽
+19. give in 屈服, 让步，呈交
+20. give out  分发，发出；公布，发表；用尽，精疲力竭
+21. give off  发出（光等）；长出（枝、杈等）
+22. kill away  杀死掉
+23. kill at  杀死在
+24. kill off  杀死关闭
+25. in the right  在右边
+26. on the right  右侧
+27. all right  好；顺利；正确的
+28. put right  使恢复正常；校正
+29. on the whole  大体上, 基本上, 总的来看〔说〕
+30. wholly  adv. 完全地；全部；统统
+31. in the general  在一般
+
+## 训练二
+
+1. look over 从(某物上面)看过去
+   仔细检查〔审视〕(某人或某物)
+2. look through  v.看穿, 审核, 浏览, 温习, 从...中显露, 彻底审查
+3. look down on  轻视；蔑视；看不起
+4. look up  查阅
+5. reprove  vt. 责骂；谴责；非难
+   vi. 责备；指责；非难
+6. fault  n. 故障；毛病；缺点；错误；[地]断层；（网球等）发球失误
+   vi. 弄错；[地]产生断层
+   vt. （通常用于疑问句或否定句）挑剔
+7. induce  vt. 引诱；[电]感应；[医]诱导；引起
+8. requisite  n. 必要的事物
+   adj. 需要的, 必要的
+9. desperate  adj. 不顾一切的, 拼命的
+   铤而走险的, 孤注一掷的
+   极想望的, 极需要的
+   危急的, 极严重的
+10. prominent  adj. 突起的, 凸出的
+    显著的; 突出的
+    杰出的, 著名的, 卓越的
+11. impatient  adj. 不耐烦的, 急躁的
+    热切的, 急切的
+12. pick up  vt. 捡起,收集,继续,得到
+13. pick out  v. 挑出，辨认出
+14. pick on  挑选
+15. pick over  挑出来
+    老谈, 老想
+16. cut down  把…砍倒〔割掉〕
+    裁短, 改小
+    减少, 降低
+    〈非正〉驳倒, 使逊色, 击败
+    砍〔杀〕死, 伤害
+17. cut into  切入
+18. cut over  切开
+19. cut off  vt. 切断, 使隔绝, 使中止@vi. 停止运转
+20. cut in  切入，插嘴, 超车
+21. for all  为所有人
+22. all in 全部在
+23. in all  总共, 共计
+24. all over  到处
+25. start up to  启动到
+26. tackle  vt. 解决; 应付
+    vt. & vi. 捉住; 扭倒
+    n. 拦截; 擒抱
+    器具, 器械, 用具
+    滑车, 滑轮组
+27. description  n. 描述, 形容
+    种类, 类型
+28. depletion  n. 消耗;用尽
+29. deprivation  n. 剥夺;被夺去,丧失
+    缺乏,损失
+30. 
 
 
-## 训练四
 
+## 训练三
 
+1. of which use   其中使用
+2. of what use 什么用途
+3. by accounts from  由帐户从
+4. prevailing adj. 占优势的;主要的
+   流行的;普遍的
+5. internal  adj. 国内的；内部的；内在的
+6. polite  adj. 有礼貌的, 客气的
+   有教养的; 文雅的
+7. devotion  n. 奉献, 献身, 忠诚
+   热爱, 挚爱
+8. 
+
+## 训练四 
+
+1. exotic  adj. 由外国引进的, 非本地的
+   奇异的, 醒目的, 吸引人的
+2. account to 帐户到
+3. use up  用完, 耗尽
+4. amount to  总计, 等于
+5. account for  对…负有责任；对…做出解释；说明……的原因
+6. run for  竞选
+7. run against  运行反对
+8. run over  复查，超过, 在...上驶过, 碾过, 匆匆浏览
+9. run into  vt. 偶然遇见, 总计为，与…相撞，与…汇合，变成
+10. more than  多于；比……多；超出
+11. other than  除了；不同于
+12. rather than  conj. 宁可...也不愿,与其...倒不如,而不是
+13. better than  比
+14. hostile  adj. 怀有敌意的, 不友善的
+    敌人的, 敌方的
+15. intimate  adj. 亲密的；私人的；精通的；[婉]有性关系的
+    n. 至交；知己
+    vt. 暗示；通知；宣布
+16. fatal  adj. 致命的
+    灾难性的
+    重大的, 决定性的
+17. at all cost  不分成本
+18. out of reach  够不着
+19. on the impulse  在冲动
+20. commitment  承诺
+21. endurance  n. 忍耐力
+22. pertinent  adj. 有关的; 中肯的; 恰当的
+23. set aside  留出；不顾；驳回，撤销
+24. hold off 不使挨近，挡住, 耽搁, 离开
+25. put away  vt. 处理掉(吃, 把...收好, 拿开, 排斥)
+26. drawn upon  绘制
+27. set aside  留出；不顾；驳回，撤销
+28. engage  vt. 雇佣；吸引，占用；使订婚；使参加；预定
+    vi. 答应，保证；从事；交战；啮合
+29. enroll  vt. 登记；把...记入名册；使加入；使入伍
+    vi. 登记；参加；注册；记入名册
+30. entail  vt. 使…成为必要, 需要
+    限定继承
+31. entitle  vt. 称做…；定名为…；给…称号 ；使…有权利
+32. justify  vt. 证明…有理; 为…辩护
+33.  analogy  n. 类似, 相似
+    类推, 类推法
+34. equivalence  n. (力量等的)均等；相等；相当
+    等价；等值
+35. detain  vt. 拘留；留住；耽搁
+36. remain  n. 剩余物; 残余
+    残骸; 遗体
+    遗迹, 遗址, 废墟
+    vi. 留下, 逗留
+    剩下, 余留
+    留待
+    vi. & link v. 仍然是, 依旧是
+37. retain  vt. 保持；雇；记住
 
 ## 训练五
 
@@ -24,49 +191,51 @@ keys: 词汇
 9. take in  vt. 接受(理解, 包括, 定阅, 欺骗, 收进, 吸收, 对...加以考虑)
 10. take on   承担,接受,从事,较量,开始雇用,呈现
 11. take after  与……相像,追求
-12. come down   下来，降落；流传下来；倒塌；落魄，失势
-13. come over  在上空〔上方〕经过
+12. take out  掏
+13. take over  接收；接管
+14. come down   下来，降落；流传下来；倒塌；落魄，失势
+15. come over  在上空〔上方〕经过
     过来; 从远处来
     顺便来访
     被理解并完全接受; 被通过
     逐渐变得
     突然感到
-14. come along  v. 出现；一起来；陪伴；进步
-15. on the spot   立刻，当场；在危险中；处于负责地位
-16. at the spot   在现场
-17. in the spot   在现场
-18. for the spot  现场
-19. care about   关心
-20. stand for   代表；支持；象征；担任…的候选人
-21. care for   喜欢; 宠爱
+16. come along  v. 出现；一起来；陪伴；进步
+17. on the spot   立刻，当场；在危险中；处于负责地位
+18. at the spot   在现场
+19. in the spot   在现场
+20. for the spot  现场
+21. care about   关心
+22. stand for   代表；支持；象征；担任…的候选人
+23. care for   喜欢; 宠爱
     牵挂, 注重
     愿意要…
     照料, 服侍
     尊重
-22. cope with  对付…
-23. face up to  大胆面向，勇于正视
-24. get across   横过(马路、河等)
+24. cope with  对付…
+25. face up to  大胆面向，勇于正视
+26. get across   横过(马路、河等)
     (使)被理解; (使)被接受
     横过(马路、河等)
     使生气, 触犯
-25. give rise to  引起，使发生, 导致
-26. consist of   由...组成
-27. for himself  为自己
-28. contemporary   adj. 当代的
+27. give rise to  引起，使发生, 导致
+28. consist of   由...组成
+29. for himself  为自己
+30. contemporary   adj. 当代的
     同时代的, 同属一个时期的
     n. 同代人, 同龄人
-29. arcane 奥术
-30. insuperable 不可逾越
-31. prestige 声望，威信、声誉
-32. compassionate    adj. 表示怜悯的,有同情心的
+31. arcane 奥术
+32. insuperable 不可逾越
+33. prestige 声望，威信、声誉
+34. compassionate    adj. 表示怜悯的,有同情心的
     adv. 表示怜悯地,有同情心地
     n. 同情,怜悯
-33. let down  放下；使失望；辜负；减速下降
-34. put up with  忍受, 容忍
-35. played up  玩起来
-36. encumbered with  与
-37. encumbered  vt. 阻塞；妨害；拖累
-38. saddled with 背负
+35. let down  放下；使失望；辜负；减速下降
+36. put up with  忍受, 容忍
+37. played up  玩起来
+38. encumbered with  与
+39. encumbered  vt. 阻塞；妨害；拖累
+40. saddled with 背负
 
 ## 训练六
 
@@ -350,63 +519,98 @@ keys: 词汇
 3. drop on  下降
 4. drop over 下降
 5. drop off  vt. 减弱(减少, 掉落)
-6. pick up  vt. 捡起,收集,继续,得到
-7. improper  adj. 不合适的, 不适当的
+6. drop in  顺便走访(某人)
+7. pick up  vt. 捡起,收集,继续,得到
+8. improper  adj. 不合适的, 不适当的
    不正派的, 下流的
-8. dismissal  n. 解雇, 免职, 开除
-9. subsequence   n. 后继,随后
-10. shade  n. 树荫；阴影；阴凉处；遮阳物；（照片等的）明暗度；少量、些微；细微的差别
+9. dismissal  n. 解雇, 免职, 开除
+10. subsequence   n. 后继,随后
+11. shade  n. 树荫；阴影；阴凉处；遮阳物；（照片等的）明暗度；少量、些微；细微的差别
     vt. 为…遮阳；使阴暗；使阴郁；掩盖；使渐变
     vi. （颜色、色彩等）渐变
-11. shadow  n. 影子；阴影；庇护；幽灵；隐蔽处
+12. shadow  n. 影子；阴影；庇护；幽灵；隐蔽处
     vt. 遮蔽；尾随；预示；使朦胧
     vi. 渐变；变阴暗
     adj. 影子内阁的
-12. shed n. 棚, 库
+13. shed n. 棚, 库
     vt. 流出, 流下
     蜕皮, 树叶脱落
-13. exclusive  adj. 高级的, 奢华的
+14. exclusive  adj. 高级的, 奢华的
     专用的; 独家的
     n. 独家新闻, 独家报道
-14.  overall   adj. 总体的; 全面的; 综合的
+15. overall   adj. 总体的; 全面的; 综合的
     全面考虑的
     adv. 大体上, 总的来说
     一切包括在内, 全部的
     n. 长罩衣
     工装裤; 工作裤
-15. cable  n. (船只、桥梁等上的)巨缆, 钢索
+16. cable  n. (船只、桥梁等上的)巨缆, 钢索
     电缆
     vt. & vi. 给(某人)发电报, 打电报告诉(某人)
-16. curtain  n. 窗帘；幕
+17. curtain  n. 窗帘；幕
     vt. 遮蔽；装上门帘
-17.  dull  adj. 钝的；呆滞的；阴暗的；迟钝的；无趣的
+18. dull  adj. 钝的；呆滞的；阴暗的；迟钝的；无趣的
     vt. 使阴暗；缓和；使迟钝
     vi. 变迟钝；减少
-18. fade  vt. & vi. (使)褪去, (使)变弱, (使)枯萎
+19. fade  vt. & vi. (使)褪去, (使)变弱, (使)枯萎
     vi. 逐渐消失
-19. faint  vi. 晕倒, 昏倒
+20. faint  vi. 晕倒, 昏倒
     adj. 微弱的, 模糊的, 暗淡的
     (体力)无力的, 虚弱的; 易失去知觉的, 昏眩的
     (动作等)无力的, 似无太大效果的
     n. 昏倒
-20. premium  n. 保险费
+21. premium  n. 保险费
     奖; 奖金
     额外费用
-21. extra money  额外资金
-22.  extra price 额外价格
-23. extra tip  额外提示
-24. extra bonus  额外奖金
-25. subjective  adj. (思想、感情等)主观的
+22. extra money  额外资金
+23. extra price 额外价格
+24. extra tip  额外提示
+25. extra bonus  额外奖金
+26. subjective  adj. (思想、感情等)主观的
     主观的(以个人好恶、观点等为依据)
-26. objective  n. 目标; 目的
+27. objective  n. 目标; 目的
     adj. 客观的; 不带偏见的
-27. point up  指向
-28. hinders 障碍，阻碍
-29. premise  vt. 引出，预先提出；作为…的前提
+28. point up  指向
+29. hinders 障碍，阻碍
+30. premise  vt. 引出，预先提出；作为…的前提
     n. 前提；上述各项；房屋连地基
     vi. 作出前提
-30. abuser  n. 滥用者；施虐者
-31. alcoholic  adj. 酒精的
+31. abuser  n. 滥用者；施虐者
+32. alcoholic  adj. 酒精的
     n. 嗜酒者, 酒鬼
-32. light drinker  轻度饮酒者
+33. light drinker  轻度饮酒者
+
+## 训练十一
+
+1. undertake  vt. 担任, 承揽; 保证 着手, 开始
+2. underdone  adj. 未充分做好的;(烹饪)未熟透的
+3. underneath  prep. 在…下面; 在…底下
+   adv. 在下面[底下]
+   n. 底面, 底部
+4. tuition 学费
+5. miserly  adj. 吝啬的；贪婪的
+6. thrifty  adj. 节约的；茂盛的；成功的
+7. manipulate  vt. 熟练控制[操作]
+8. summit  n. (山等的)最高点; 峰顶
+   高层会议
+9. summon  vt. 召唤；召集；鼓起；振作
+10. at stake  adj. 在危险中,处于成败关头
+11. on the verge of 濒临于；接近于, 即将
+12. at loss  亏损
+13. facilitate  vt. 使便利, 减轻…的困难
+14. promote  vt. 提升, 提拔
+    筹划, 发起, 创立
+    推销
+    〈正〉促进; 推动; 增进
+15. pledge  n. 抵押；保证，誓言；抵押品，典当物
+    vt. 保证，许诺；用……抵押；举杯祝……健康
+16. promise  n. 许诺，允诺；希望
+    vt. 允诺，许诺；给人以…的指望或希望
+    vi. 许诺；有指望，有前途
+17. standpoint  n. 立场; 观点
+18. priority  n. 优先；优先权；优先次序；优先考虑的事
+19. restrain  vt. 抑制, 遏制; 管制, 克制, 约束
+20. next of kin 近亲
+21. the inseparable companion  不可分割的伴侣
+22. 
 

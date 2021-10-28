@@ -16,6 +16,7 @@ tags:  universal adversarial perturbation
   - Fooling rate (FR) presents the ratio of images whose predict label become incorrect by adding the UAP. [NAG]
   - fooling rate, which is the proportion of inputs that are misclassified by the
     model when the UAP is applied.[SGD-UAP]
+  - the fooling ratio, that is the proportion of images that change labels when perturbed by our universal perturbation.[UAP]
 - attack succes rate: 在加入扰动后，原来分类正确的样本被错误分类
   - It is the percentage of data samples (x) for which the target CNN predicts a different label upon adding the UAP (v).【AAA】更像是fooling rate 的定义，在论文表示写的是FR？
 
@@ -26,26 +27,31 @@ tags:  universal adversarial perturbation
 
 ------
 
-| 方法                                           |                     |          | 方法           | $\xi$ | 评估方式                                | 代码                                                         |
-| ---------------------------------------------- | ------------------- | -------- | -------------- | ----- | --------------------------------------- | ------------------------------------------------------------ |
-| [UAP][1]【CVPR2017】                           | 数据依赖            |          |                |       |                                         | [官方](https://github.com/LTS4/universal)<br />[torch版本1](https://github.com/ferjad/Universal_Adversarial_Perturbation_pytorch)<br />[torch版本2]() |
-| [FFF][2]【BMVC2017】                           | 数据无关            |          |                |       |                                         | [官方](https://github.com/val-iisc/fast-feature-fool)        |
-| [AAA][3]【ECCV2018】                           | 数据无关            |          | 生成模型       | 10    |                                         | [官方](https://github.com/val-iisc/aaa)                      |
-| [NAG][4]【CVPR2018】                           | 数据相关            |          | 生成模型       |       |                                         | [官方](https://github.com/val-iisc/nag)                      |
-| [GAP][5]【CVPR2018】                           |                     |          |                |       |                                         | [官方](https://github.com/OmidPoursaeed/Generative_Adversarial_Perturbations) |
-| [GD-UAP][6]（会议论<br />文扩展）【TPAMI2018】 | 数据无关<br />/依赖 | 任务无关 | 神经网络中间层 |       |                                         | [官方](https://github.com/val-iisc/GD-UAP)                   |
-| [PD-UAP][7]【ICCV2019】                        |                     |          |                |       |                                         | [官方](https://github.com/LynnHongLiu/PDUA)                  |
-| [SV-UAP][8]【CVPR2018】                        |                     |          |                |       |                                         | [torch版本1](https://github.com/slayff/art_of_vectors_pytorch)<br />[torch版本2](https://github.com/willwx/art_of_vectors_pytorch) |
-| [UPGD-UAP](10)【ICIP2020】                     | 数据依赖            |          | 投影梯度优化   |       |                                         |                                                              |
-| [SGD-UAP][9]【ICIP2021】                       | 数据依赖            |          | 梯度优化       |       | fooling rate<br />targeted fooling rate | [官方](https://github.com/kenny-co/sgd-uap-torch)            |
+| 方法                                           |                     |          | 方法                 | $\xi$                    | 评估方式                                | 代码                                                         |
+| ---------------------------------------------- | ------------------- | -------- | -------------------- | ------------------------ | --------------------------------------- | ------------------------------------------------------------ |
+| [UAP][1]【CVPR2017】                           | 数据依赖            |          | 边界最小距离（优化） | lp范数10<br />l2范数2000 | fooling rate                            | [官方](https://github.com/LTS4/universal)<br />[torch版本1](https://github.com/ferjad/Universal_Adversarial_Perturbation_pytorch)<br />[torch版本2]() |
+| [FFF][2]【BMVC2017】                           | 数据无关            |          |                      |                          |                                         | [官方](https://github.com/val-iisc/fast-feature-fool)        |
+| [AAA][3]【ECCV2018】                           | 数据无关            |          | 生成模型             | 10                       |                                         | [官方](https://github.com/val-iisc/aaa)                      |
+| [NAG][4]【CVPR2018】                           | 数据相关            |          | 生成模型             |                          |                                         | [官方](https://github.com/val-iisc/nag)                      |
+| [GAP][5]【CVPR2018】                           | 数据无关<br />/依赖 |          | 生成模型             | lp范数-10                | fooling rate                            | [官方](https://github.com/OmidPoursaeed/Generative_Adversarial_Perturbations) |
+| [GD-UAP][6]（会议论<br />文扩展）【TPAMI2018】 | 数据无关<br />/依赖 | 任务无关 | 神经网络中间层       |                          |                                         | [官方](https://github.com/val-iisc/GD-UAP)                   |
+| [PD-UAP][7]【ICCV2019】                        |                     |          |                      |                          |                                         | [官方](https://github.com/LynnHongLiu/PDUA)                  |
+| [SV-UAP][8]【CVPR2018】                        |                     |          |                      |                          |                                         | [torch版本1](https://github.com/slayff/art_of_vectors_pytorch)<br />[torch版本2](https://github.com/willwx/art_of_vectors_pytorch) |
+| [UPGD-UAP](10)【ICIP2020】                     | 数据依赖            |          | 投影梯度优化         |                          |                                         |                                                              |
+| [SGD-UAP][9]【ICIP2021】                       | 数据依赖            |          | 梯度优化             |                          | fooling rate<br />targeted fooling rate | [官方](https://github.com/kenny-co/sgd-uap-torch)            |
 
-注释：[这个版本](https://github.com/BardOfCodes/universal_pytorch)提供了UAP，FFF，DeepFool三种方法的实现
+注释：
+
++ [这个版本](https://github.com/BardOfCodes/universal_pytorch)提供了UAP，FFF，DeepFool三种方法的实现
++ $\xi$一般是指无穷范数约束下的值
+
+
 
 ---
 
 ## 【CVPR2017】Universal adversarial perturbations
 
-
+经过预训练的模型后仍然容易受到通用对抗扰动的攻击
 
 ## 【BMVC2017】 Fast feature fool: A data independent
 approach to universal adversarial perturbations
@@ -122,6 +128,14 @@ l指的是第l层，K是最小批大小32，d是距离指标（欧拉或余弦�
 #### 思考
 
 他们是通过模型来采样类别印象样本，使得每个噪声图像在分类成某个特定的类别时具有很高的置信度。那么是否可以探究模型难以分类的这些样本，找到这些样本特征空间的特点（有点像北航的checkout）。
+
+
+
+## 【CVPR2018】Generative Adversarial Perturbations
+
+
+
+显示出可以用于分割网络中。但是需要专门为分割网络设计通用扰动。
 
 ## 【ICIP2021】Universal adversarial robustness of texture and shape-biased models
 
