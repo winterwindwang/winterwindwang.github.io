@@ -95,7 +95,10 @@ import neural_renderer
 
    > 解决方案：使用python setup.py install 命令运行，等到报错的时候就去`build/temp.win-amd64-3.6/Release`下寻找build.ninja。
    >
-   > 首先，下载ninja并将其编译，然后C盘下新建一个文件夹Local并在其下新建Ninja文件夹，把编译好的ninja.exe放到里面，再把路径名配置到环境变量里面。回过头看nerual renderer文件夹下有个build文件夹，里面有个cuda文件夹，里面有个build.ninja文件，如果报算力不匹配(如sm_86不匹配，就将其改成sm_80)，改完后然后在命令行里面使用ninja -f build.ninja编译.obj文件。后续的无.obj报错的解决方案类似。
+   > 首先，下载ninja并将其编译，然后C盘下新建一个文件夹Local并在其下新建Ninja文件夹，把编译好的ninja.exe放到里面，再把路径名配置到环境变量里面。
+   > 然后，cmd定位到build文件夹下的\temp.win-amd64-3.6\Release\nerual renderer，可以看到有个build.ninja文件，先使用命令`ninja -f build.ninja`编译。
+   > 如果输出算力不匹配错误(如sm_86、computer_86不匹配，就将build.ninja中所有以_86为后缀的字符改成_80)。改完后在命令行里面使用ninja -f build.ninja重新编译。后续的发生无.obj错误以类似的方法解决。
+   > 记住编译完build.ninja后，cmd命令行要定位回neural_renderer根目录，然后再执行`python setup.py install`
 
 5. 第四个问题，会报以下错误
 
