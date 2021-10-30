@@ -47,4 +47,6 @@ keywords: notes
 10. aggregating 逐个增加
 11. conj. 即使；虽然
 12. in the vicinity of  在附近
+13. precludes  vt. 妨碍；排除；阻止
+14. spurious  adj. 假的；伪造的；欺骗的
 
