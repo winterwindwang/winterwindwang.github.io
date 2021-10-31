@@ -22,6 +22,7 @@ keywords: notes
 9. universal perturbations computed for the VGG-19
    network have a fooling ratio above 53% for all other tested
    architectures.
+10. Adversarial samples also possess the characteristic of transferability, which means adversarial sample generated for attacking one model could also mislead another model.
 
 ## 词汇
 
@@ -49,4 +50,6 @@ keywords: notes
 12. in the vicinity of  在附近
 13. precludes  vt. 妨碍；排除；阻止
 14. spurious  adj. 假的；伪造的；欺骗的
+15. adopts 
+16. 
 
