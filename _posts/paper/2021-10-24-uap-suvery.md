@@ -34,9 +34,9 @@ tags:  universal adversarial perturbation
 | [AAA][3]【ECCV2018】                           | 数据无关            |          | 生成模型             | 10                       |                                         | [官方](https://github.com/val-iisc/aaa)                      |
 | [NAG][4]【CVPR2018】                           | 数据相关            |          | 生成模型             |                          |                                         | [官方](https://github.com/val-iisc/nag)                      |
 | [GAP][5]【CVPR2018】                           | 数据无关<br />/依赖 |          | 生成模型             | lp范数-10                | fooling rate                            | [官方](https://github.com/OmidPoursaeed/Generative_Adversarial_Perturbations) |
-| [GD-UAP][6]（会议论<br />文扩展）【TPAMI2018】 | 数据无关<br />/依赖 | 任务无关 | 神经网络中间层       |                          |                                         | [官方](https://github.com/val-iisc/GD-UAP)                   |
+| [GD-UAP][6]（会议论<br />文扩展）【TPAMI2018】 | 数据无关<br />/依赖 | 任务无关 | 神经网络中间层       |                          |                                         | [官方](https://github.com/val-iisc/GD-UAP)<br />[torch版本](https://github.com/psandovalsegura/pytorch-gd-uap) |
 | [PD-UAP][7]【ICCV2019】                        |                     |          |                      |                          |                                         | [官方](https://github.com/LynnHongLiu/PDUA)                  |
-| [SV-UAP][8]【CVPR2018】                        |                     |          |                      |                          |                                         | [torch版本1](https://github.com/slayff/art_of_vectors_pytorch)<br />[torch版本2](https://github.com/willwx/art_of_vectors_pytorch) |
+| [SV-UAP][8]【CVPR2018】                        |                     |          |                      |                          |                                         | [torch版本1](https://github.com/slayff/art_of_vectors_pytorch)<br />[torch版本2](https://github.com/AndrewAtanov/nla-project/blob/master/method.py) |
 | [UPGD-UAP](10)【ICIP2020】                     | 数据依赖            |          | 投影梯度优化         |                          |                                         |                                                              |
 | [SGD-UAP][9]【ICIP2021】                       | 数据依赖            |          | 梯度优化             |                          | fooling rate<br />targeted fooling rate | [官方](https://github.com/kenny-co/sgd-uap-torch)            |
 
@@ -141,6 +141,16 @@ l指的是第l层，K是最小批大小32，d是距离指标（欧拉或余弦�
 
 
 
+## 【TPAMI2018】Generalizable data-free objective for crafting universal adversarial perturbations
+
+关键词：通用对抗扰动，非数据依赖，中间层特征
+
+---
+
+摘要：
+
+
+
 ----
 
 ## 参考文献：
@@ -150,22 +160,17 @@ Frossard. Universal adversarial perturbations. In CVPR, 2017.
 
 [2]: Konda Reddy Mopuri, Utsav Garg, and R. Venkatesh Babu. Fast feature fool: A data independent approach to universal adversarial perturbations. In BMVC, 2017.
 
-[3]: Konda Reddy Mopuri, Phani Krishna Uppala, and R Venkatesh Babu. Ask, acquire, and
-attack: Data-free uap generation using class impressions. In ECCV, 2018.
+[3]: Konda Reddy Mopuri, Phani Krishna Uppala, and R Venkatesh Babu. Ask, acquire, and attack: Data-free uap generation using class impressions. In ECCV, 2018.
 
-[4]: Konda Reddy Mopuri, Utkarsh Ojha, Utsav Garg, and R. Venkatesh Babu. Nag: Network for
-adversary generation. In CVPR, 2018.
+[4]: Konda Reddy Mopuri, Utkarsh Ojha, Utsav Garg, and R. Venkatesh Babu. Nag: Network for adversary generation. In CVPR, 2018.
 
-[5]: Omid Poursaeed, Isay Katsman, Bicheng Gao, and Serge Belongie. Generative adversarial
-perturbations. In CVPR, 2018.
+[5]: Omid Poursaeed, Isay Katsman, Bicheng Gao, and Serge Belongie. Generative adversarial perturbations. In CVPR, 2018.
 
-[6]: Konda Reddy Mopuri, Aditya Ganeshan, and Venkatesh Babu Radhakrishnan. Generalizable
-data-free objective for crafting universal adversarial perturbations. TPAMI, 2018.
+[6]: Konda Reddy Mopuri, Aditya Ganeshan, and Venkatesh Babu Radhakrishnan. Generalizable data-free objective for crafting universal adversarial perturbations. TPAMI, 2018.
 
 [7]: Hong Liu, Rongrong Ji, Jie Li, Baochang Zhang, Yue Gao, Yongjian Wu, and Feiyue Huang. Universal adversarial perturbation via prior driven uncertainty approximation. In ICCV, 2019.
 
-[8]: Valentin Khrulkov and Ivan Oseledets. Art of singular vectors and universal adversarial
-perturbations. In CVPR, 2018.
+[8]: Valentin Khrulkov and Ivan Oseledets. Art of singular vectors and universal adversarial perturbations. In CVPR, 2018.
 
 [9]:  Co, Kenneth T., et al. "Universal adversarial robustness of texture and shape-biased models." *2021 IEEE International Conference on Image Processing (ICIP)*. IEEE, 2021.
 

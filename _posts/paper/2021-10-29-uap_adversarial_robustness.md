@@ -12,6 +12,7 @@ tags: 通用对抗样本防御
 | ------------------------------------ | ---- |
 | [UAT][1]【AAAI2020】                 |      |
 | [雅可比正则防御方法][2]【ICANN2021】 |      |
+| [3][]【ICCV2019】                    |      |
 
 
 
@@ -81,8 +82,73 @@ $||f(x+\delta) - f(x) ||_q\approx ||J_f(x)\delta||_q$
 
 ![image-20211029220644211](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211029220644211.png)
 
+## 【ICCV2019】Defending against universal perturbations with shared adversarial training
+
+关键词： 通用对抗扰动，对抗训练，对抗训练的拓展，研究了通用对抗扰动的鲁棒性和未扰动数据上的性能，Pareto front
+
+---
+
+作者显示了对抗训练在预防通用对抗扰动时更有效。并且研究了通用对抗扰动的鲁棒性和未扰动数据上的性能的平衡，并提出了一种对抗训练（**shared adversarial training，共享对抗训练**）的拓展方法优雅地解决了这个trade-off。在图像分类和语义分割上地结果显示了欺骗经过对抗训练强化的模型变得清晰可辨并显示目标场景的模式。
+
+![image-20211031160655800](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211031160655800.png)
+
+从上图可以看出，在作者提出的共享对抗训练策略训练的鲁棒模型上生成通用对抗扰动时，扰动的效果很差。
+
+### 引言
+
+现有关于通用对抗样本攻击防御的工作：
+
+对**通用对抗样本的分析**：
+
++ Moosavi-Dezfooli[31]等人连接通用对抗样本鲁棒性和决策边界的几何性，证明了微小对抗扰动的存在，如果决策边界系统地正弯曲，则存在小的普遍扰动。
++ Jetleyp[18]等人上者的基础上提供了分类器易受到普遍扰动影响的方向与对未扰动数据正确预测很重要的方向一致。他们认为预测能力和对抗性脆弱性密切相关
+
+**通用对抗样本防御**：
+
++ **现有方法以及问题**：
+  + 对某个模型的通用扰动定义一个分布（近似最优），可以是预先计算和随机采样[29]，学习一个生成模型[16]，或者从训练时不同epoch保存的模型上收集一系列的通用对抗扰动，扰动fine-tune模型参数，但是这种方法在鲁棒性的提升是有限的。这很可能是因为模型在优化过程中对通用扰动的固定分布过拟合。然而，在每个mini-batch重新计算通用对抗扰动是不现实的。
+  + 另一种防御方法是通过向模型添加额外的组件：如训练一个判别输入是否是对抗扰动的模型。然而这种方法使整个模型变大，需要更高的代价。
++ **解决方法**：在本文，作者提出了一种通过计算每个最小批的**共享扰动**，并将它们运用到对抗训练中。（**注：共享扰动是如何实现的？与普通的对抗训练方式有何区别？**）
+
+在分割任务中，Arnab[2]发现**残差连接和多尺度处理会增加结构的鲁棒性**，然而**密集条件随机场的平均场推理仅屏蔽梯度，但不会增加自身的鲁棒性**。与这些方法相比，作者聚焦在修改训练过程（**思考：训练代价会不会提高？**）来提高 鲁棒性。这两种方法在未来可以组合。
+
+### 方法
+
+#### 符号和对抗攻击
+
+首先定义了风险，即$risk ~ p(\theta)$，考虑以下三种风险[47]:
+
+![image-20211031164603343](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211031164603343.png)
+
+![image-20211031164610964](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211031164610964.png)
+
+其中$\xi$表示通用对抗扰动。S表示扰动采样空间。注意，对抗和通用风险不一致，$\xi(x)$依赖从数据分布D中特定的x，而后者需要在泛化到整个数据分布上。
+
+为生产对抗样本，采用了PGD，因为它可以在计算效率和攻击效果上有一个tradeoff。通用对抗样本上形式类型。
+
+#### 共享对抗训练
+
+对抗训练在通用风险上优化了一个宽松的上界，并且激发了共享对抗训练，其目的最大化抵抗通用扰动的鲁棒性。其目标函数可以定义成以下形式
+
+![image-20211031165747292](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211031165747292.png)
+
+其中σ平衡了鲁棒性和干净样本的性能。具体细节看section4.1.
+根据上述推理，可知最好在对抗训练中使用 ρuni 的上限，它比 ρadv 更严格，但比 ρuni 更便宜。为此，作者提出**heap adversary， $f_{heap}$**（PGD的替换形式）。
+
+**具体做法**：作者将包含d个样本的最小批分割成大小为s 的d/s个堆（最小批的子集）。与使用$f_{adv}$在d个数据点上计算一个扰动不同，作者使用$f_{heap}$计算d/s个共享扰动。于是，通过repeat每个共享扰动s次就将这些扰动被广播到所有d个数据中。s 越小，对相应堆的共享扰动就越“过拟合”。整个过程如下图所示
+
+![image-20211031170813222](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211031170813222.png)
+
+使用交叉熵损失会存在，在一些数据点上具有过高的误分类置信度，和在一些数据点上正确分类。（与错误分类更多数据点但置信度较低相比，这会产生更高的成本）。为了解决该问题，作者采用了clip版本的交叉熵算![image-20211031171409354](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211031171409354.png)
+
+k=-log0.2，对应于不鼓励对手将正确类别的置信度降低到 0.2 以下。相同的做法可以在[42]中看到。
+
+
+
 ## 参考文献
 
-[1]: 
+[1]: Shafahi, Ali, et al. "Universal adversarial training." *Proceedings of the AAAI Conference on Artificial Intelligence*. Vol. 34. No. 04. 2020.
 
-[2]: CoK.T.,RegoD.M.,LupuE.C.(2021)JacobianRegularizationforMitigatingUniversalAdversarialPerturbations.In:FarkašI.,MasulliP.,OtteS.,WermterS.(eds)ArtificialNeuralNetworksandMachineLearning–ICANN2021.ICANN2021.LectureNotesinComputerScience,vol12894.Springer,Cham.https://doi.org/10.1007/978-3-030-86380-7_17
+[2]:CoK.T.,RegoD.M.,LupuE.C(2021) Jacobian Regularization for Mitigating Universal Adversarial Perturbations.In:FarkašI.,MasulliP.,OtteS.,WermterS (eds)ArtificialNeuralNetworksandMachineLearning ICANN2021.ICANN2021.LectureNotesinComputerScience,vol12894.Springer,Cham.https://doi.org/10.1007/978-3-030-86380-7_17
+
+[3]: Mummadi, Chaithanya Kumar, Thomas Brox, and Jan Hendrik Metzen. "Defending against universal perturbations with shared adversarial training." *Proceedings of the IEEE/CVF International Conference on Computer Vision*. 2019.
