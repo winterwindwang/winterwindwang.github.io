@@ -3,7 +3,7 @@ layout: post
 title: 【对抗样本（十一）】 Batch Normalization Increases Adversarial Vulnerability and Decreases Adversarial Transferability A Non-Robust Feature Perspective
 category: 文献阅读
 tags: BN对DNN的影响,对抗攻击，迁移性 
-keywords:  BN， robust features, non-robust features
+keywords: BN， robust features, non-robust features
 ---
 
 ---
