@@ -34,8 +34,8 @@ tags:  universal adversarial perturbation
 | [AAA][3]【ECCV2018】                           | 数据无关            |          | 生成模型             | 10                       |                                         | [官方](https://github.com/val-iisc/aaa)                      |
 | [NAG][4]【CVPR2018】                           | 数据相关            |          | 生成模型             |                          |                                         | [官方](https://github.com/val-iisc/nag)                      |
 | [GAP][5]【CVPR2018】                           | 数据无关<br />/依赖 |          | 生成模型             | lp范数-10                | fooling rate                            | [官方](https://github.com/OmidPoursaeed/Generative_Adversarial_Perturbations) |
-| [GD-UAP][6]（会议论<br />文扩展）【TPAMI2018】 | 数据无关<br />/依赖 | 任务无关 | 神经网络中间层       |                          |                                         | [官方](https://github.com/val-iisc/GD-UAP)<br />[torch版本](https://github.com/psandovalsegura/pytorch-gd-uap) |
-| [PD-UAP][7]【ICCV2019】                        |                     |          |                      |                          |                                         | [官方](https://github.com/LynnHongLiu/PDUA)                  |
+| [GD-UAP][6]（会议论<br />文扩展）【TPAMI2018】 | 数据无关<br />/依赖 | 任务无关 | 神经网络中间层       |                          | fooling rate                            | [官方](https://github.com/val-iisc/GD-UAP)<br />[torch版本](https://github.com/psandovalsegura/pytorch-gd-uap) |
+| [PD-UAP][7]【ICCV2019】                        |                     |          |                      | 10                       | fooling rate                            | [官方](https://github.com/LynnHongLiu/PDUA)                  |
 | [SV-UAP][8]【CVPR2018】                        |                     |          |                      |                          |                                         | [torch版本1](https://github.com/slayff/art_of_vectors_pytorch)<br />[torch版本2](https://github.com/AndrewAtanov/nla-project/blob/master/method.py) |
 | [UPGD-UAP](10)【ICIP2020】                     | 数据依赖            |          | 投影梯度优化         |                          |                                         |                                                              |
 | [SGD-UAP][9]【ICIP2021】                       | 数据依赖            |          | 梯度优化             |                          | fooling rate<br />targeted fooling rate | [官方](https://github.com/kenny-co/sgd-uap-torch)            |
@@ -137,9 +137,9 @@ l指的是第l层，K是最小批大小32，d是距离指标（欧拉或余弦�
 
 显示出可以用于分割网络中。但是需要专门为分割网络设计通用扰动。
 
-## 【ICIP2021】Universal adversarial robustness of texture and shape-biased models
 
 
+---
 
 ## 【TPAMI2018】Generalizable data-free objective for crafting universal adversarial perturbations
 
@@ -148,6 +148,116 @@ l指的是第l层，K是最小批大小32，d是距离指标（欧拉或余弦�
 ---
 
 摘要：
+
+
+
+## 【CVPR2018】Art of singular vectors and universal adversarial perturbations
+
+
+
+## 【ICCV2019】Universal Adversarial Perturbation via Prior Driven Uncertainty Approximation
+
+关键词：模型不确定性，蒙特卡洛采样方法，激活神经元增加模型不确定性，纹理偏置增加统计不确定性，基于动量增强的随机梯度下降算法，Laplacian金字塔频率模型。
+
+---
+
+### 摘要
+
+与传统的监督UAP需要训练数据的知识，数据独立的无监督UAP更加使用。现有的无监督方法未能利用模型的不确定性来生成鲁棒的扰动。在本文，作者提出了一种无监督UAP方法，称为Prior Driven UAP, PD-UA，通过利用模型的不确定性来生成鲁棒的UAP。具体地，使用蒙特卡洛采样方法来激活更多神经元来增加模型不确定性以生成更好的对抗扰动。此外，纹理偏置先验揭露了统计不确定性。UAP使用基于boosted动量优化器的随机梯度下降生成，Laplacian金字塔频域模型最终被用于维持模型的统计不确定性。大量的实验证明了作者的方法在ImageNet验证集上取得了很好的攻击性能。
+
+###  引言
+
+两种UAP方法：
+
++ 数据依赖：数据依赖方法生成UAP采用了以下的公式[21]，即模型结构和训练数据必须提取知道。因此**数据依赖方法的性能对训练样本的数量很敏感[15,24]**。
+
+![image-20211102225758175](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211102225758175.png)
+
++ 数据独立：数据独立UAP更加灵活[23,24]，仅需要模型结构和参数，不需要使用的训练数据。通过**最大化**随随机高斯初始化输入的**卷积层神经元的激活值**，它可以通过直接攻击给定CNN模型的稳定性来优化UAP。（**疑问：稳定性和不确定性是如何定义的？其有什么含义？**）
+
+本质上，UAP利用CNN模型的不确定性来干扰其在输入观察下的输出可靠性。因此，UAP的重要问题变成如何评估模型的不确定性，这激励作者从一种新的角度来研究数据独立的UAP。相似的工作有[7,18,29]，他们表示通过CNN模型中的dropout操作能够得到模型的不确定性估计。
+
+现有的两种主要的不确定类型[4]：
+
++ Epistemic uncertainty（认识性不确定性）： 模型参数的不确定性与训练数据相关。直观上，在作者看来，CNN的不确定性可以由每一层卷积层激活的神经元个数反应。在模型输出期间，激活的可信神经元越多，实现的不确定性就越大，从而产生更好的 UAP。为此，在本文的UAP中引入了虚拟模型不确定性，目的在于**对每个卷积层使用蒙特卡洛Dropout激活更多的神经元以增加模型的不确定性**。
++ Aleatoric uncertainty（ 偶然的不确定性）：**数据独立但是任务依赖的不确定性**，是一种统计不确定性可以表示成一个量，这个量在不同输入上保持稳定，但是不同任务上表现不同。对于一个分类任务而言[10]，统计证明了ImageNet上的预训练模型包含很强的纹理偏差，这激励作者**使用纹理图像来揭露偶然不确定性从而更好的欺骗CNN**。具体地，**引入纹理偏差作为先验信息**，其在扰动训练时约束在模型的偶然不确定性上。因为纹理图片包括了低频信息[33]，因此**引入了Laplacian金字塔频域模型来以更快的收敛效率提升攻击性能**。
+
+贡献：
+
+1. 为了近似Epistemic uncertainty，作者提出了一个虚拟模型不确定性，其能使PD-UA主要最大化对应于扰动输入的神经元激活，这能增加不确定性和提升攻击攻击性能。
+2. 为了近似Aleatoric uncertainty，作者首先引入了纹理偏置来初始化UAP，这在公共基准上取得了重大的性能提升。从而得到了两个基层而重要的结论：（1）好的初始化扰动在攻击更深层CNN上对生成的UAP的质量有重要影响。（2）纹理样的扰动可以不需要任何训练直接欺骗CNN。
+3. 进一步提出了一个拉普拉斯金字塔频率模型来提升低频部分的梯度，其输出被有效地用于通过带有动量的 SGD 更新扰动。
+4. 在ImageNet上的6个模型上，与SOTA的数据独立UAP进行比较。在fooling rate上有巨大的提升。
+
+### 方法
+
+UAP通过增加模型输出的预测不确定性来欺骗CNN。
+
++ **首先**，当越来越多的神经元被激活时，CNN的认知不确定性会变大，更有助于生成鲁棒的UAP。为此，**向神经元的输入上引入二项分布来近似每一层的不确定性（a Bernoulli distribution is introduced
+  over the output of the neurons to approximate the uncertainty per layer）**。该过程由MC dropout实现。
++ **其次**，为了更好的近似偶然不确定性，其统计地反应了内在的噪声分布，作者引入纹理偏置作为信息先验，进一步增加模型的不确定性。模型的不确定性在更深层次的网络结构上提升了攻击性能。
++ **最终**，作者将二者结合在一个网络中，并且由SGD直接优化。
++ **此外**，Laplacian金字塔频域模型被用来正则化梯度以促进收敛。
+
+整个框架如下图所示：
+
+![image-20211103001705251](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211103001705251.png)
+
+相应的算法如图所示
+
+![image-20211103001741429](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211103001741429.png)
+
+其中公式8如下图所示，其中Ue(δ)表示整个CNN网络的不确定性，La(δ)表示**风格损失**（是特征向量的Gramm矩阵），鼓励扰动重现纹理偏置图像。![image-20211103001814263](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211103001814263.png)
+
+公式10-12如下图所示，为动量增强更新策略
+
+![image-20211103001928362](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211103001928362.png)
+
+#### 分析
+
+最近的研究表明[32,34]，**当每层所有的神经元都被激活，具有相似概念的神经元就被会反复激活，这导致了信息冗余**。
+
+### 实验
+
+实验设置：
+
++ 数据集：数据和模型
++ 评估指标：Fooling rate
++ 比较方法：UA和PP都是作者方法的简化版本分别为
+  + UA没有偶尔不确定性（没有纹理先验）
+  + PP仅使用纹理先验作为扰动
++ 实现细节：
+
+**结果**
+
+![image-20211103002837723](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211103002837723.png)
+
+从表1可以看出作者方法的性能都超过了其他方法。
+
+![image-20211103002936086](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211103002936086.png)
+
+![image-20211103003009466](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211103003009466.png)
+
+![image-20211103003025928](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211103003025928.png)
+
+上图是使用纹理偏置初始化的扰动结果图
+
+![image-20211103003036499](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211103003036499.png)
+
+以上是直接使用不同的纹理先验作为通用扰动的攻击效果
+
+**消融实验**
+
++ 收敛速度
++ 优化中不同LPFM(拉普拉斯金字塔频率模型)参数的影响
+
+---
+
+## 【ICIP2020】Universal adversarial attack via enhanced projected gradient descent
+
+
+
+## 【ICIP2021】Universal adversarial robustness of texture and shape-biased models
 
 
 
