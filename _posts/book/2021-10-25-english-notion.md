@@ -60,7 +60,13 @@ keywords: notes
 28. corroborate  vt. 证实,支持(某种说法、信仰、理论等)
     n. 确证者;确证物
 29. unmodified adj. 未更改的
-30. 
+30. input-agnostic 输入不可知
+31. image-agnostic 图像不可知
+32. adulterate vt. (尤指食物)掺假
+    <废>奸污，诱奸
+    adj. 掺杂的，掺假的；不纯的
+    通奸的，犯通奸罪的
+    n. 掺假
 
   
 
