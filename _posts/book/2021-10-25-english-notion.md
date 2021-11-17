@@ -27,10 +27,28 @@ keywords: notes
 17. In order to assess texture and shape biases, we conducted six major experiments **along with** three control experiments, which are described in the Appendix.
 18. more fine-grained statement 
 19. We view bridging this gap as an interesting direction for future work.
+20. We focus on fog in this work, due to the availability of relevant data, but our framework is generalizable and can be easily extended to other weather conditions.)
+21. We experimentally analyze Vision Transformers to answer this question.
+22. We urge interested readers to examine the supplemental material where we provide descriptions of each attack.  引用他们文章或意见时，推荐读者去看论文原文的写法
+23. We demonstrate the SAGA results by attacking a simple ensemble of Vision Transformers and Big Transfer Models for CIFAR-10, CIFAR-100 and ImageNet. 针对不同数据，模型的写法
+24. For ImageNet, we use Bit-M-R152x4 and ViT-L-16
+25. This intriguing phenomenon of human imperceptible perturbation fooling the DNN has inspired active research for studying the model robustness against adversarial attack techniques
+26. has introduced an efficient one-step attack method, widely known as the Fast Gradient Sign Method (FGSM). [27] has extended the basic FGSM to its iterative variant, i.e. I-FGSM,
+27. For consistency we follow prior works [38, 46, 41] and adopt l∞ = 10/255. Unless otherwise specified, the UAP in this work is by default untargeted
+28. Concurrent to [46], [20] adopts a similar approach.
+29. Our results align well with [61] that identifies frequency as a factor for the classwise
+    robustness gap against targeted UAP
+30. Overall, there is a general consensus among the UAP researchers that crafting UAP with limited or no data is challenging.
+31. For a detailed description of their various methods, we refer the readers to [31].
+32. Universal adversarial perturbation (UAP), i.e. a single perturbation to fool the network for most images, is widely recognized as a more practical attack because the UAP can be generated beforehand and applied directly during the attack stage.  通用对抗扰动的描述
+33. image-agnostic perturbations that cause most natural images to be misclassified.
+34. Universal adversarial perturbations exhibit many interesting properties such as their
+    universality across networks, which means that a perturbation constructed using one DNN will perform relatively well for other DNNs.
+35. Our analysis with UAPs reveals the extent to which increased shape-bias improves adversarial robustness of models to universal attacks.  我们对 UAP 的分析揭示了增加的形状偏差在多大程度上提高了模型对普遍攻击的对抗性鲁棒性。
 
 ## 词汇
 
-1. image-agnostic 图像不可知
+1. image-agnostic 图像不可知  ==》image-dependent
 2. proportional adj. 比例的, 成比例的  the performance of the resulting perturbation is proportional to the available training data.
 3. adulterate  vt. (尤指食物)掺假, <废>奸污，诱奸 ,adj. 掺杂的，掺假的；不纯的 ,通奸的，犯通奸罪的 ,n. 掺假
 4. susceptible   adj. 易受影响的; 易动感情的, 过敏的; 易受…感染的, 能经受的
@@ -67,6 +85,17 @@ keywords: notes
     adj. 掺杂的，掺假的；不纯的
     通奸的，犯通奸罪的
     n. 掺假
+33. To the best of our knowledge
+34. in conjunction with
+35. uncover 揭露
+36. be made up of 由什么组成
+37. justified explanation  合理的解释
+38. alternative explanation 替代解释
+39. ounter-intuitive 违法直觉的
+40. If this would be the case 如果是这样的话
+41. quasi-imperceptible 不可感知  
 
-  
+ 
+
+ 
 
