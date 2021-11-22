@@ -45,6 +45,10 @@ keywords: notes
 34. Universal adversarial perturbations exhibit many interesting properties such as their
     universality across networks, which means that a perturbation constructed using one DNN will perform relatively well for other DNNs.
 35. Our analysis with UAPs reveals the extent to which increased shape-bias improves adversarial robustness of models to universal attacks.  我们对 UAP 的分析揭示了增加的形状偏差在多大程度上提高了模型对普遍攻击的对抗性鲁棒性。
+36. According to our experiments, a small number K, for example, k = 2 or 3, will be sufficient.
+37. we omit the detailed description of the model architecture and refer the readers to
+38. The PASCAL VOC dataset contains 20 object categories. The majority of images in the PASCAL VOC dataset have 1 to 5 object instances, on average, 1.4 categories and 2.3 instances per image. The MS COCO dataset contains 80 object categories. Images in this dataset have more object instances, on average, 3.5 categories and 7.7 instances per image.
+39. Its core idea is that,
 
 ## 词汇
 
@@ -94,6 +98,7 @@ keywords: notes
 39. ounter-intuitive 违法直觉的
 40. If this would be the case 如果是这样的话
 41. quasi-imperceptible 不可感知  
+41. discrepancy n. 差异，不符合(之处)；不一致(之处)
 
  
 
