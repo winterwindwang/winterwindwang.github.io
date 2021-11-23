@@ -49,6 +49,7 @@ keywords: notes
 37. we omit the detailed description of the model architecture and refer the readers to
 38. The PASCAL VOC dataset contains 20 object categories. The majority of images in the PASCAL VOC dataset have 1 to 5 object instances, on average, 1.4 categories and 2.3 instances per image. The MS COCO dataset contains 80 object categories. Images in this dataset have more object instances, on average, 3.5 categories and 7.7 instances per image.
 39. Its core idea is that,
+40. With the progress of adversarial attacks，  随机对抗攻击的进展
 
 ## 词汇
 
