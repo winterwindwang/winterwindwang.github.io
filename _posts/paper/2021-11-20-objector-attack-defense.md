@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【对抗样本（十三）】目标检测对抗样本攻击的防御方法
+title: 【文献调研】目标检测对抗样本攻击的防御方法
 category: 文献阅读
 keywords: 目标检测防御
 tags: defense of adversarial attack against detector

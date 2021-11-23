@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【对抗样本（八）】【CVPR2019】Once a MAN Towards Multi-Target Attack via Learning Multi-Target Adversarial Network Once
+title: 【对抗样本（九）】【CVPR2019】Once a MAN Towards Multi-Target Attack via Learning Multi-Target Adversarial Network Once
 category: 文献阅读
 keywords: adversarial attack, adversarial defense
 tags: 生成模型, 多目标攻击，对抗防御

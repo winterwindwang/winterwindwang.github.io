@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【论文阅读】【ICLR2019】Imagenet-Trained Cnns Are Biased Towards Texture; Increasing Shape Bias Improves Accuracy And Robustness
+title: 【对抗样本（十四）】【ICLR2019】Imagenet-Trained Cnns Are Biased Towards Texture; Increasing Shape Bias Improves Accuracy And Robustness
 category: 文献阅读
 keywords: CNN property, shape bias improve acc and rubst
 tags: imagenet上训练的CNN偏向纹理

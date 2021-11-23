@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【文献阅读】【NeuraIPS2019】Adversarial Examples are not Bugs, they are Features
+title: 【对抗样本（十三）】【NeuraIPS2019】Adversarial Examples are not Bugs, they are Features
 category: 文献阅读
 tags: CNN, 鲁棒特征, 非鲁棒特征
 keywords: binary classification, adversarial transferability, robust training

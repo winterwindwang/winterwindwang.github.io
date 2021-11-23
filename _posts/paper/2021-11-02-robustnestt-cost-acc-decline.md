@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【对抗样本（十）】Is Robustness the Cost of Accuracy A Comprehensive Study on the Robustness of 18 Deep Image Classification Models
+title: 【对抗样本（十一）】Is Robustness the Cost of Accuracy A Comprehensive Study on the Robustness of 18 Deep Image Classification Models
 category: 文献阅读
 tags: explaining research, adversarial attack, the disclosed Pareto frontier
 keywords: image classification models, adversarial attacks

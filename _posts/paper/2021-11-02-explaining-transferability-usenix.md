@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【对抗样本（九）】【USENIX】Why Do Adversarial Attacks Transfer Explaining Transferability of Evasion and Poisoning Attacks
+title: 【对抗样本（十）】【USENIX】Why Do Adversarial Attacks Transfer Explaining Transferability of Evasion and Poisoning Attacks
 category: 文献阅读
 keywords: evasion/poisoning attack, transferability explaining, 
 tags: 逃避/投毒攻击，对抗攻击迁移性解释
