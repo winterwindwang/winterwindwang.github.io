@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 论文阅读（三）A Survey of Clustering With Deep Learning From the Perspective of Network Architecture
-category: paper reading
+title: 【论文阅读（四）】A Survey of Clustering With Deep Learning From the Perspective of Network Architecture
+category: 文献阅读
 tags: 论文阅读
 keywords: 无监督学习综述，神经网络，深度学习
 ---
