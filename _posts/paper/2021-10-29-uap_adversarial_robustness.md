@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 通用对抗攻击的对抗防御方法--survey
+title: 【文献调研】通用对抗攻击的对抗防御方法
 category: 文献阅读
 keywords: 通用对抗样本攻击，对抗防御
 tags: 通用对抗样本防御
