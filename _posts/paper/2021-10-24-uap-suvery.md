@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【对抗样本（十四）】通用对抗样本攻击--调研
+title: 【文献调研】通用对抗样本攻击
 category: 文献阅读
 keywords: uap， adversarial attack, adversarial example
 tags:  universal adversarial perturbation
