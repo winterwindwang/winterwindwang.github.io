@@ -1,7 +1,7 @@
 ---
 layout: post
-title:【对抗样本（十二）】Consistency-Sensitivity Guided Ensemble Black-Box Adversarial Attacks in Low-Dimensional Spaces
-category: 文献阅读
+title: 【对抗样本（十二）】Consistency-Sensitivity Guided Ensemble Black-Box Adversarial Attacks in Low-Dimensional Spaces
+category:文献阅读
 keywords: black-box adversarial attack, ensemble attack, low-dimensional space
 tags: 集成黑盒攻击, 低维空间攻击
 ---
