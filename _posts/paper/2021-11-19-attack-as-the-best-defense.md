@@ -1,6 +1,6 @@
 ---
 layout: post
-title:【对抗样本（十六）】新颖对抗攻击方法
+title: 【对抗样本（十六）】新颖对抗攻击方法
 category: 文献阅读
 keywords: image-to-image translation, GAN, adversarial attack， nullifying attack
 tags: 图像转换, 无效攻击, 黑盒攻击
