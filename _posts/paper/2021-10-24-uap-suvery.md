@@ -41,6 +41,7 @@ tags:  universal adversarial perturbation
 | [GD-UAP][6]（会议论<br />文扩展）【TPAMI2018】 | 数据无关<br />/依赖  | 任务无关 | 神经网络中间层       |                          | fooling rate                            | [官方](https://github.com/val-iisc/GD-UAP)<br />[torch版本](https://github.com/psandovalsegura/pytorch-gd-uap) |
 | [SV-UAP][8]【CVPR2018】                        | 数据依赖（少量数据） |          |                      |                          |                                         | [torch版本1](https://github.com/slayff/art_of_vectors_pytorch)<br />[torch版本2](https://github.com/AndrewAtanov/nla-project/blob/master/method.py) |
 | [PD-UAP][7]【ICCV2019】                        | 数据独立             |          |                      | 10                       | fooling rate                            | [官方](https://github.com/LynnHongLiu/PDUA)                  |
+| [F-UAP][12]【CVPR2020】                        | 数据独立             |          |                      | 10                       | fooling rate                            | [官方][https://github.com/phibenz/uap_virtual_data.pytorch]  |
 | [UPGD-UAP](10)【ICIP2020】                     | 数据依赖             |          | 投影梯度优化         | 10                       |                                         |                                                              |
 | [SGD-UAP][9]【ICIP2021】                       | 数据依赖             |          | 梯度优化             | 10                       | fooling rate<br />targeted fooling rate | [官方](https://github.com/kenny-co/sgd-uap-torch)            |
 | [CosUAP][11]【ICCV2021】                       | 数据独立             | 任务无关 | 梯度优化             | lp，10                   | fooling rate                            | [官方][https://github.com/ChaoningZhang/Cosine-UAP]代码尚未公布 |
@@ -622,7 +623,7 @@ batch size 对UAP性能的影响（训练UAP使用的数据量对攻击性能的
 
 ### 摘要
 
-与传统的监督UAP需要训练数据的知识，数据独立的无监督UAP更加使用。现有的无监督方法未能利用模型的不确定性来生成鲁棒的扰动。在本文，作者提出了一种无监督UAP方法，称为Prior Driven UAP, PD-UA，通过利用模型的不确定性来生成鲁棒的UAP。具体地，使用蒙特卡洛采样方法来激活更多神经元来增加模型不确定性以生成更好的对抗扰动。此外，纹理偏置先验揭露了统计不确定性。UAP使用基于boosted动量优化器的随机梯度下降生成，Laplacian金字塔频域模型最终被用于维持模型的统计不确定性。大量的实验证明了作者的方法在ImageNet验证集上取得了很好的攻击性能。
+与传统的监督UAP需要训练数据的知识，数据独立的无监督UAP更加使用。现有的无监督方法未能利用模型的不确定性来生成鲁棒的扰动。在本文，作者提出了一种无监督UAP方法，称为Prior Driven UAP, **PD-UA**，通过利用模型的不确定性来生成鲁棒的UAP。具体地，使用蒙特卡洛采样方法来激活更多神经元来增加模型不确定性以生成更好的对抗扰动。此外，纹理偏置先验揭露了统计不确定性。UAP使用基于boosted动量优化器的随机梯度下降生成，Laplacian金字塔频域模型最终被用于维持模型的统计不确定性。大量的实验证明了作者的方法在ImageNet验证集上取得了很好的攻击性能。
 
 ###  引言
 
@@ -650,7 +651,11 @@ batch size 对UAP性能的影响（训练UAP使用的数据量对攻击性能的
 
 ### 方法
 
+![image-20211129002307224](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211129002307224.png)
+
 UAP通过增加模型输出的预测不确定性来欺骗CNN。
+
+**方法的输入是什么？UAP是如何优化的？**
 
 + **首先**，当越来越多的神经元被激活时，CNN的认知不确定性会变大，更有助于生成鲁棒的UAP。为此，**向神经元的输入上引入二项分布来近似每一层的不确定性（a Bernoulli distribution is introduced
   over the output of the neurons to approximate the uncertainty per layer）**。该过程由MC dropout实现。
@@ -709,6 +714,18 @@ UAP通过增加模型输出的预测不确定性来欺骗CNN。
 
 + 收敛速度
 + 优化中不同LPFM(拉普拉斯金字塔频率模型)参数的影响
+
+---
+
+## 【CVPR2020】Understanding Adversarial Examples from the Mutual Influence of Images and Perturbations
+
+关键词
+
+---
+
+### 摘要
+
+
 
 ---
 
@@ -931,7 +948,16 @@ ImageNet有1000个类，假设在图像空间中每个样本具有相同的区�
 
 [11]: Zhang, C., Benz, P., Karjauv, A., & Kweon, I. S. (2021). Data-Free Universal Adversarial Perturbation and Black-Box Attack. In Proceedings of the IEEE/CVF International Conference on Computer Vision (pp. 7868-7877).
 
+[12]: Zhang, Chaoning, et al. "Understanding adversarial examples from the mutual influence of images and perturbations." *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*. 2020.
 
 
 
 
+
+
+
+
+
+
+
+[12]: 

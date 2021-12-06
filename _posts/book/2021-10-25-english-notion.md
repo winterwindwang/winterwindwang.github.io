@@ -49,11 +49,23 @@ keywords: notes
 37. we omit the detailed description of the model architecture and refer the readers to
 38. The PASCAL VOC dataset contains 20 object categories. The majority of images in the PASCAL VOC dataset have 1 to 5 object instances, on average, 1.4 categories and 2.3 instances per image. The MS COCO dataset contains 80 object categories. Images in this dataset have more object instances, on average, 3.5 categories and 7.7 instances per image.
 39. Its core idea is that,
-40. With the progress of adversarial attacks，  随机对抗攻击的进展
+40. With the progress of adversarial attacks，  随着对抗攻击的进展
+41. Although many certified adversarial defense methods have reported substantial advances in adversarial robustness, recent works [19, 9, 3] report that the gradient masking may present a false sense of security, i.
+42. Despite a large literature devoted to improving the robustness of deep-learning models, many fundamental questions remain unresolved.  虽然有发展，但是还有很多问题待解决
+43. The regularization parameter ( is an important hyper-parameter in our proposed method. We show how the regularization parameter affects the performance of our robust classifiers by numerical experiments on two datasets, MNIST and CIFAR10. 某个超参的重要性
+44. **The figure shows the classification accuracy rates (percentage) of ResNet against different attacks (higher is better) on CIFAR-10**.
+45. **Since the widespread types of attacks in the real world are very diverse**, the adversarial examples used in the training procedure are often biased.
+46. the **delicately** crafted special noise
+47. However, the existence of adversarial examples **has raised concerns about** the
+    security of computer vision systems
+48. To address security concerns for high-stakes applications, **researchers are searching for ways to** make models more robust to attacks
+49. Δ is the gradient of y with respect to x:
+50. We demonstrate the effectiveness of AdvDrop **by extensive experiments**,
+51. 
 
 ## 词汇
 
-1. image-agnostic 图像不可知  ==》image-dependent
+1. image-agnostic 图像不可知  ==> image-dependent
 2. proportional adj. 比例的, 成比例的  the performance of the resulting perturbation is proportional to the available training data.
 3. adulterate  vt. (尤指食物)掺假, <废>奸污，诱奸 ,adj. 掺杂的，掺假的；不纯的 ,通奸的，犯通奸罪的 ,n. 掺假
 4. susceptible   adj. 易受影响的; 易动感情的, 过敏的; 易受…感染的, 能经受的
@@ -100,8 +112,22 @@ keywords: notes
 40. If this would be the case 如果是这样的话
 41. quasi-imperceptible 不可感知  
 41. discrepancy n. 差异，不符合(之处)；不一致(之处)
+41. Vanilla model 原始模型(raw)模型
+41. a large proportion of  很大一部分
+41. contingent  
+46. adj. 偶然（发生）的；（损失、责任等）附带的；以事实为依据的；依情况而变的
+    n. （代表某一组织或国家的）代表团；（军队的）分遣队
+47. collaterally 相关的
+48. a spectrum of 连续的, 连串的
+48. despite its structural simplicity 尽管结构简单
+48. on par with 与...相当
+48. the former 
+52. In the real world, attacks are continuously evolving.
+53. a toy experiment  玩具实验
+54. denominator 分母
+55. numerator 分子
 
- 
+
 
  
 
