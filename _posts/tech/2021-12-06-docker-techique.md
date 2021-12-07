@@ -129,9 +129,7 @@ pipreqs ./ --encoding=utf8
      ls
      ```
 
-  4. 
-
-# Docker 作业
+# 制作Docker 镜像（TODO）
 
 ## 1 Dockerfile文件的编写
 
@@ -163,9 +161,9 @@ docker build -t simplelayout:v1
 
 
 
-# 微信版本
+# 在Docker的ubuntu中安装文件
 
-第一步：拉去ubuntu镜像
+第一步：拉取ubuntu镜像
 
 ```dockerfile
 docker pull ubuntu:latest 
@@ -195,21 +193,23 @@ docker run -t rm -f ubuntu:latest bash
 
 1. It is because there is no package cache in the image, you need to run
 
-   ```python
-   apt-get update
-   ```
+```python
+apt-get update
+```
+
+
 
 2. before installing packages, and if your command is in a Dockerfile, you'll then need:
 
-   ```python
-   apt-get -y install curl
-   ```
+```python
+apt-get -y install curl
+```
 
 3. To suppress the standard output from a command use -qq. E.g.(使用-qq后，不会有输出)
 
-   ```python
-   apt-get -qq -y install curl
-   ```
+```python
+apt-get -qq -y install curl
+```
 
 第四步：完事后，使用命令安装fenics
 
@@ -252,15 +252,16 @@ docker commit -a "eric" -m "ubuntu fenics images" 17bab7644e7b fenics_freeneuro:
 
 1. 容器删除
 
-   ```PYTHON
-   docker rm [CONTAINER ID]
-   ```
+
+```python
+docker rm [CONTAINER ID]
+```
 
 2. 镜像删除（必须先删除运行该镜像的容器）
 
-   ```python
-   docker rmi IMAGE-ID
-   ```
+```python
+docker rmi IMAGE-ID
+```
 
 ## 有用命令
 
