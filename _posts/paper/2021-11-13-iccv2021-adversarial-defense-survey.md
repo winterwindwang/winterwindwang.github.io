@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【文献调研】对抗样本防御调研
+title: 【文献调研-ICCV2021】对抗样本防御调研
 category: 文献阅读
 keywords: adversarial examples, adversarial examples defense
 tags: defense survey
@@ -800,6 +800,30 @@ logit squeezing
 ![image-20211201164524257](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211201164524257.png)
 
 第二项为：Frobenius norm，其中z(Xk)表示类别k的logit。
+
+# 【ICCV2021】Adversarial Example Detection Using Latent Neighborhood Graph
+
+一句话概述：
+
+---
+
+# 摘要
+
+
+
+
+
+# 【ICCV2021】Adversarial Robustness for Unsupervised Domain Adaptation
+
+关键词：领域自适应、无监督/半监督学习
+
+一句话概述：作者的方法通过**对齐UDA模型的特征**与**由使用领域自适应训练的ImageNet预训练模型**学习到的**鲁棒特征**。
+
+motivation: 当前对抗鲁棒性需要标签，并从单个领域学习（训练模型）。鲁棒模型训练的时候不需要对抗样本？
+
+# 摘要
+
+
 
 
 

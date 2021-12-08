@@ -6,11 +6,9 @@ keywords: python, docker
 tags: python, docker
 ---
 
-Done:
+博客简介:
 
 + 在Docker中拉取ubuntu镜像，然后实例化一个容器，然后在容器中安装fenics包
-
-TODO
 
 + 将一个Python打包成docker镜像，然后上传到docker images中
 
@@ -18,11 +16,11 @@ TODO
 
 我对Docker的理解是，不依赖于任何系统（可跨平台使用）的项目可执行环境。具体地来说就是，由于不同设备存在的差异可能会导致A电脑上能运行的项目，到B电脑上就不能运行了。为了解决这个问题，就必须提供第三方平台，将A电脑上的项目部署到独立的第三方平台上（Docker），然后B电脑想用的时候，直接从第三方平台上拉取这个项目，就可以运行了。
 
-# 下载和安装
+# 一、下载和安装
 
 安装过程中会提示要先安装`wsl2`，按要求去微软的官网下载并安装就行了。
 
-# 配置Docker加速
+## 配置Docker加速
 
 我用的是Docker v1.22.4版本，参考[这篇](https://yeasy.gitbook.io/docker_practice/install/mirror)博客，将加速源配置到Docker Engine中，配置完成后，点击`Apply & Restart`保存后Docker就会重启并应用配置的镜像地址了。
 
@@ -36,11 +34,15 @@ TODO
 }
 ```
 
-## 注意
+Docker Engine的位置如下图所示
+
+![image-20211208205516946](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211208205516946.png)
+
+## 前提概要
 
 两种生成`requirements.txt`的方法
 
-#### 第一种
+### 第一种
 
 ```python
 pip freeze > requirements.txt
@@ -80,7 +82,7 @@ UnicodeDecodeError: 'gbk' codec can't decode byte 0x81 in position 248: illegal 
 pipreqs ./ --encoding=utf8
 ```
 
-# Docker使用
+# 二、Docker使用--example
 
 + 拉取python包
 
@@ -129,47 +131,107 @@ pipreqs ./ --encoding=utf8
      ls
      ```
 
-# 制作Docker 镜像（TODO）
+# 三、制作Docker 镜像
 
-## 1 Dockerfile文件的编写
+代码基于老版的第八次作业。
+
+目的是编写dockerfile文件，然后使用docker打包并上传到docker hub中。
+
+## 1、Dockerfile文件的编写
 
 ```python
-FROM python:3.7-alpine
+# 这一步是指定基础的python环境，要与你项目所用python相同
+FROM python:3.6.13
 
-WORKDIR /srv
-ADD ./requirements.txt /srv/requirements.txt
-RUN pip install -r requirements.txt
-ADD . /srv
+# 讲当前目录下所有的文件添加到 镜像中的/app下
+COPY . /app
+
+# 将/app设置为工作目录，这样以下的操作均会在该目录下执行
+WORKDIR /app
+
+# 首先更新pip
+RUN pip install --no-cache-dir --upgrade pip
+# 然后安装requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+# 安装完成后，打包
 RUN python setup.py install
 
-ENTRYPOINT [ "run_server" ]
+CMD [ "python" "simplelayout"]
 ```
 
-## 2 Docker build
+这里需要注意几点：
 
-在根目录下，运行`docker build .`
++ 第一是为防止命令`RUN pip install --no-cache-dir -r requirements.txt`安装不成功，requirements.txt中一定要指定版本，注意版本号是`x.x.x`格式，后面不能出现`x.x.x.postsdasd`这样的后缀，否则会装不上包
++ 第二是python版本最好最好与你项目所用的版本号一致，因为不同的python版本需要的包不一样，如果用不同的python版本安装requirement.txt可能会安装不上。
 
-注意，由于docker上python包版本可能会与本地不一致，所以需要将项目中`requirements.txt`中的版本好去掉
+## 2、Docker build
 
-执行命令
+在根目录下，执行以下命令以生成镜像
 
 ```python
-docker build -t simplelayout:v1
+docker build -t simplelayout:v1 .
 ```
 
-然而，安装pip install -r requirements.txt 一直失败。原因是找不到依赖性（package）
+不要忘记后面那个点  `.`， 安装完成后，使用`docker images`查看：
 
+![image-20211208202543407](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211208202543407.png)
 
+## 3、Docker Run
 
-# 在Docker的ubuntu中安装文件
+最后实例化一个容器，并查看是否包含simplelayout
 
-第一步：拉取ubuntu镜像
+![image-20211208202907018](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211208202907018.png)
+
+从上图可以看出，容器被实例化，并且simplelayout也在容器中。
+
+# 4、上传镜像至网上
+
+1. 注册Docker账号
+2. 在命令行中登录
+
+```python
+docker login -u 用户名 -p 密码
+```
+
+3. docker hub网站创建镜像信息（这一步省略也不影响下面的步骤）
+4. 本地tag关联
+
+```python
+docker tag <existing-image> <hub-user>/<repo-name>[:<tag>]
+# 具体命令
+docker tag simplelayout:v1 用户名/simplelayout:v1
+```
+
+5. push到docker官网
+
+```python
+docker push <hub-user>/<repo-name>:<tag>
+# 具体命令
+docker push 用户名/simplelayout:v1
+```
+
+下面是仔细的流程
+
+![image-20211208205223912](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211208205223912.png)
+
+在docker官网上也可以看到
+
+![image-20211208205301269](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211208205301269.png)
+
+# 四、在Docker的ubuntu中安装文件
+
+目的：在docker中拉取ubuntu镜像，然后实例化一个ubuntu容器，并在容器中安装fenics
+
+以下是具体步骤：
+
+1. 拉取ubuntu镜像
 
 ```dockerfile
 docker pull ubuntu:latest 
 ```
 
-第二步：实例化容器
+2. 实例化容器
 
 ```dockerfile
 docker run -t ubuntu:latest bash
@@ -182,6 +244,7 @@ docker run -t ubuntu:latest bash
 + -v： 将本地文件夹`D:/text_similar`与容器文件夹/root/text_similar共享。可以不设置
 + ubuntu:latest：要运行的镜像名+TAG
 + bash：进入容器命令行。
++ 可选参数dit：如果从这个stdin中退出，会导致容器的停止
 
 注意，如果在使用以下命令，那么容器运行完后将会被删除
 
@@ -189,7 +252,7 @@ docker run -t ubuntu:latest bash
 docker run -t rm -f ubuntu:latest bash
 ```
 
-第三步：生成系统文件
+3. 生成系统文件
 
 1. It is because there is no package cache in the image, you need to run
 
@@ -211,7 +274,7 @@ apt-get -y install curl
 apt-get -qq -y install curl
 ```
 
-第四步：完事后，使用命令安装fenics
+4. 完事后，使用命令安装fenics
 
 ```python
 apt-get --y install fenics
@@ -221,13 +284,13 @@ apt-get --y install fenics
 
 ![image-20211206194519979](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211206194519979.png)
 
-第五步：退出容器
+5. 退出容器
 
 ```pyhon
 exit
 ```
 
-第六步：容器打包成镜像，需要用到容器ID(即ubuntu的 CONTAINER ID)
+6. 容器打包成镜像，需要用到容器ID(即ubuntu的 CONTAINER ID)
 
 ```python
 docker commit -a "eric" -m "ubuntu fenics images" 17bab7644e7b fenics_freeneuro:v1
@@ -248,32 +311,61 @@ docker commit -a "eric" -m "ubuntu fenics images" 17bab7644e7b fenics_freeneuro:
 
 ![image-20211206204207159](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20211206204207159.png)
 
-第七步：容器/镜像删除
+7. 容器/镜像删除
 
-1. 容器删除
++ 容器删除
 
 
 ```python
 docker rm [CONTAINER ID]
 ```
 
-2. 镜像删除（必须先删除运行该镜像的容器）
++ 镜像删除（必须先删除运行该镜像的容器）
 
 ```python
 docker rmi IMAGE-ID
 ```
 
-## 有用命令
+8. 如何在运行现有的容器(即`docker ps -a`查询出的容器)
+
+```python
+docker attach [CONTAINER ID] # 注意container ID可以是容器ID的前4位
+```
+
+更高级的用法参考[这里](https://blog.csdn.net/skh2015java/article/details/80229930)，或者参考以另外一个命令
+
+```powershell
+# 运行一个容器
+$ docker run -dit ubuntu
+69d137adef7a8a689cbcb059e94da5489d3cddd240ff675c640c8d96e84fe1f6
+
+# 查看现有容器
+$ docker container ls
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+69d137adef7a        ubuntu:latest       "/bin/bash"         18 seconds ago      Up 17 seconds                           zealous_swirles
+# 进入容器
+$ docker exec -it 69d1 bash
+root@69d137adef7a:/#
+```
+
+
+
+## 一些命令
 
 + docker ps -a 查看存在的容器
 + docker images 查看存在的镜像
 + docker stop 停止正在运行的容器
 + docker pull ubuntu:latest 拉取容器
++ docker attach container_id
 
 # 参考资料
 
-[1]:https://zhuanlan.zhihu.com/p/137895577
-[2]:https://blog.csdn.net/gf19960103/article/details/109489632
-[3]:https://www.ruanyifeng.com/blog/2018/02/docker-tutorial.htm	"docker项目介绍"
-[4]: https://scipy.github.io/devdocs/building/linux.html	"scipy build problem"
-[5]:https://zhuanlan.zhihu.com/p/137895577	"python容器运行"
+1. https://zhuanlan.zhihu.com/p/137895577
+
+2. https://blog.csdn.net/gf19960103/article/details/109489632
+
+3. https://www.ruanyifeng.com/blog/2018/02/docker-tutorial.htm
+
+4. https://scipy.github.io/devdocs/building/linux.html
+
+5. https://zhuanlan.zhihu.com/p/137895577
