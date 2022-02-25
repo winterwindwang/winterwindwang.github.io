@@ -26,12 +26,14 @@ source conda
 
 ```
 ls | wc -w 
+# 注 在imagenet validation中，执行该命令是50000(即文件个数为50000张图片)
 ```
 
-查看当前目录下有**多少个文件**
+查看当前目录下**所有文件的大小**
 
 ```
 ls | wc -c
+# 注 在imagenet validation中，执行该命令是1450000
 ```
 
 查看当前文件夹下有**多少个文件**，**多少个子目录**
@@ -109,3 +111,20 @@ sudo mount -t nfs 192.168.2.1:<nfs路径> <本地路径>
 sudo mount -t nfs 192.168.2.1:/mnt/share1/ /mnt/share1/
 ```
 
+## 6 GIT命令
+
+git常见的命令就不提了。有时候会出现你使用了`git add.`和`git commit -m "update"`以后发现添加了不想要的东西，这时候就需要撤回。使用以下命令即可实现撤回
+
+```bash
+git reset --soft HEAD^
+```
+
+其中`HEAD^`的意思是上一个版本，也可以写成`HEAD~1`
+
+如果进行了两次commit，都想撤回，可以使用`HEAD~2`
+
+`--soft`：不删除工作空间改动代码，撤销commit, **不撤销git add .**
+
+`--mixed`：不删除工作空间改动代码，撤销commit，并且撤销`git add .`操作。该参数是默认参数，即`git reset --mixed HEAD^`和`git reset HEAD^`是等效的
+
+`--hard`：删除工作空间改动代码，撤销commit， 撤销`git add .`。注意完成这个操作后，就恢复到了上一次的commit状态。

@@ -34,17 +34,17 @@ tags:  universal adversarial perturbation
 | 方法                                           |                      |          | 方法                 | $\xi$                    | 评估方式                                | 代码                                                         |
 | ---------------------------------------------- | -------------------- | -------- | -------------------- | ------------------------ | --------------------------------------- | ------------------------------------------------------------ |
 | [UAP][1]【CVPR2017】                           | 数据依赖             |          | 边界最小距离（优化） | lp范数10<br />l2范数2000 | fooling rate                            | [官方](https://github.com/LTS4/universal)<br />[torch版本1](https://github.com/ferjad/Universal_Adversarial_Perturbation_pytorch)<br />[torch版本2]() |
-| [FFF][2]【BMVC2017】                           | 数据无关             |          |                      |                          |                                         | [官方](https://github.com/val-iisc/fast-feature-fool)        |
+| [FFF][2]【BMVC2017】                           | 数据无关             |          | 网络层               |                          |                                         | [官方](https://github.com/val-iisc/fast-feature-fool)        |
 | [AAA][3]【ECCV2018】                           | 数据无关             |          | 生成模型             | 10                       |                                         | [官方](https://github.com/val-iisc/aaa)                      |
 | [NAG][4]【CVPR2018】                           | 数据相关             |          | 生成模型             |                          |                                         | [官方](https://github.com/val-iisc/nag)                      |
 | [GAP][5]【CVPR2018】                           | 数据无关<br />/依赖  |          | 生成模型             | lp范数-10                | fooling rate                            | [官方](https://github.com/OmidPoursaeed/Generative_Adversarial_Perturbations) |
 | [GD-UAP][6]（会议论<br />文扩展）【TPAMI2018】 | 数据无关<br />/依赖  | 任务无关 | 神经网络中间层       |                          | fooling rate                            | [官方](https://github.com/val-iisc/GD-UAP)<br />[torch版本](https://github.com/psandovalsegura/pytorch-gd-uap) |
-| [SV-UAP][8]【CVPR2018】                        | 数据依赖（少量数据） |          |                      |                          |                                         | [torch版本1](https://github.com/slayff/art_of_vectors_pytorch)<br />[torch版本2](https://github.com/AndrewAtanov/nla-project/blob/master/method.py) |
+| [SV-UAP][8]【CVPR2018】                        | 数据依赖（少量数据） |          | 网络层分解           |                          |                                         | [torch版本1](https://github.com/slayff/art_of_vectors_pytorch)<br />[torch版本2](https://github.com/AndrewAtanov/nla-project/blob/master/method.py) |
 | [PD-UAP][7]【ICCV2019】                        | 数据独立             |          |                      | 10                       | fooling rate                            | [官方](https://github.com/LynnHongLiu/PDUA)                  |
-| [F-UAP][12]【CVPR2020】                        | 数据独立             |          |                      | 10                       | fooling rate                            | [官方][https://github.com/phibenz/uap_virtual_data.pytorch]  |
+| [F-UAP][12]【CVPR2020】                        | 数据独立             |          | 输出Logit            | 10                       | fooling rate                            | [官方][https://github.com/phibenz/uap_virtual_data.pytorch]  |
 | [UPGD-UAP](10)【ICIP2020】                     | 数据依赖             |          | 投影梯度优化         | 10                       |                                         |                                                              |
 | [SGD-UAP][9]【ICIP2021】                       | 数据依赖             |          | 梯度优化             | 10                       | fooling rate<br />targeted fooling rate | [官方](https://github.com/kenny-co/sgd-uap-torch)            |
-| [CosUAP][11]【ICCV2021】                       | 数据独立             | 任务无关 | 梯度优化             | lp，10                   | fooling rate                            | [官方][https://github.com/ChaoningZhang/Cosine-UAP]代码尚未公布 |
+| [CosUAP][11]【ICCV2021】                       | 数据独立             | 任务无关 | 输出logit            | lp，10                   | fooling rate                            | [官方][https://github.com/ChaoningZhang/Cosine-UAP]代码尚未公布 |
 
 注释：
 
@@ -727,6 +727,18 @@ UAP通过增加模型输出的预测不确定性来欺骗CNN。
 
 
 
+## 【AAAI2020】
+
+一句话概述：控制了通用对抗扰动攻击的子类别。与以往的通用对抗扰动同时攻击所有的图像不同，作者提出的通用对抗扰动只会使部分类别的图像分类错误，但仍对其他部分图像有影响。
+
+---
+
+### 摘要
+
+
+
+
+
 ---
 
 ## 【ICIP2020】Universal adversarial attack via enhanced projected gradient descent
@@ -950,14 +962,4 @@ ImageNet有1000个类，假设在图像空间中每个样本具有相同的区�
 
 [12]: Zhang, Chaoning, et al. "Understanding adversarial examples from the mutual influence of images and perturbations." *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*. 2020.
 
-
-
-
-
-
-
-
-
-
-
-[12]: 
+[13]:Zhang, Chaoning, et al. "Data-Free Universal Adversarial Perturbation and Black-Box Attack." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2021. 
