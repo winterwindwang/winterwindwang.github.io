@@ -103,7 +103,7 @@ keywords: notes
 87. on the spot   立刻，当场；在危险中；处于负责地位
 88. **a plausible explanation is that**
 89. **Although feature squeezing generalizes to other domains, here we focus on image classification**. Because it is the domain where adversarial examples have been most extensively studied.
-90. Their method requires a large set of both adversarial and legitimate inputs and is not capable of detecting individual adversarial examples, making it not useful in practice.
+90. Their method requires a large set of both adversarial and legitimate inputs and is not capable of detecting individual adversarial examples, making it not useful **in practice**.实际上，事实上；在实践中
 91. It is computationally expensive and can only detect adversarial examples lying far from the manifolds of the legitimate population.
 92. Given unlimited perturbation bounds, **one could always force a model to misclassify an example into any class**, but often by producing images that are unrecognizable or obviously suspicious to humans.
 93. There has been **substantial** work demonstrating that
@@ -116,6 +116,25 @@ keywords: notes
 100. **Alongside works endeavoring to explain adversarial examples**, others have proposed defenses in
      order to increase robustness.  除了努力解释对抗性例子的工作外，其他人还提出了防御措施，以提高稳健性。
 101. the proposed method achieves **slightly** lower accuracy  on adversarially trained models than BIM
+102. owever, these activities **can be viewed as two facets of the same field**, and together they have undergone substantial development over the past ten years.  可以被视为同一领域的两个方面
+103. Similar studies between spatial invariance and such common corruptions is **an interesting direction of future work**.
+104. **recent efforts have resulted in** equivariant NN models for other transformations such as rotation, flip
+105. Such group-equivariant NN models (GCNNs) are designed to **be invariant to** a specific group of transformations,
+106. Our approach **results in superior performance as well as intepretability**
+107. Previous works **have broadly investigated** the reason for the widespread of such adversarial examples.
+108. we construct a simple, **intuitive example** in which shift invariance dramatically reduces robustness. 直观样本
+109. **deployed** machine learning systems 已经部署的机器学习系统
+110. it is **imperative\necessary\essential\urgent** to ensure that 这是**命令\必要\必要\紧急**以确保
+111. this observation **implies** that
+112. Some **ascribes** the adversary to linear accumulation of perturbations from inputs to
+     final outputs
+113. **This phenomenon could be semantically explained** as subclasses from the same superclass share more feature similarities. 这种现象可以在语义上解释为来自同一超类的子类共享更多的特征相似性。
+114. **The former and the latter** are often referred to as the whitebox and the blackbox threat
+     model, respectively.
+115. In particular, the efficacy of the attack is even **higher** than the existing blackbox attacks and **comparable** to the existing whitebox attacks.
+116. Further, our method **surpasses** the state-of-the-art whitebox KED-MI attack on Pubfig83
+     and achieves a close attack accuracy on the CelebA dataset.
+117. In particular, BREP-MI **outperforms** GMI and the blackbox attack **by a substantial margin for all model architectures**.
 
 ## 词汇
 
@@ -195,12 +214,16 @@ keywords: notes
 74. substantial  adj. 坚固的；结实的，大量的，可观的，重大的，重要的，实质的，基本的，大体上的
 75. this counter intuitive behavior  这种反直觉行为
 76. Even more importantly 更重要的是
-76. In the same year,
-76. insensitive 
-76. inspect
-76. degrades
-81. 
-76.  
+77. In the same year
+78. insensitive   adj. 感觉迟钝的;不友好的，感觉不到的;麻木不仁的
+79. inspect   vt. 检查；视察；检阅 vi. 进行检查；进行视察
+80. degrades  vt. 使……丢脸；使……降级；使……降解；贬低 vi. 退化；降级，降低
+81. in practice  实际上，事实上；在实践中
+82. at present  目前，当前
+76.  solve/address  解决问题
+76.  indicates,represents,denotes  
+76.  imperative /necessary
+76.  ascribes 
 
 
 
