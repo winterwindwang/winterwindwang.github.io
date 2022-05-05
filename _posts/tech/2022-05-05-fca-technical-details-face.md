@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FCA技术细节：face文件的生成
+title: FCA技术细节--face文件的生成
 category: 技术
 keywords: fca, 3D max
 tags: technical details
