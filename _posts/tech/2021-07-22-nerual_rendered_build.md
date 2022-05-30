@@ -7,6 +7,10 @@ keywords: 神经渲染器安装，环境编译
 ---
 
 > 导语：复现论文时，需要使用神经渲染器，在我的环境下安装时遇到一些问题，先将不成功的解决方案记录下来。主要是在RTX 3070显卡（算力参数,sm_86），CUDA11.0编译并安装torch版本的neural_renderer
+>
+> 更新：V100了，GPU上上安装neural_renderer
+
+# Window系统
 
 ### 1 系统环境
 
@@ -135,5 +139,56 @@ import neural_renderer
 
 解决上述问题以后，就应该可以成功的安装neural_renderer。
 
-#### 效果
+#### # Linux 系统
+
+### 1  系统环境
+
++ ubuntu 18.04
+
+  ```
+  >>uname -r
+  4.15.0-167-generic
+  >> uname -a
+  Linux i-t3wxq38x 4.15.0-167-generic #175-Ubuntu SMP Wed Jan 5 01:56:07 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+  >> lsb_release -a
+  No LSB modules are available.
+  Distributor ID:	Ubuntu
+  Description:	Ubuntu 18.04.4 LTS
+  Release:	18.04
+  Codename:	bionic
+  >> dpkg --print-architecture
+  amd64 (要根据这个下载cudnn)
+  ```
+
++ Cuda 11.0 `CUDA Toolkit 11.0.3 (August 2020), Versioned Online Documentation`
+
+  ```
+  选择：Linux=>x86_64=>Ubuntu=>18.04=>runfile[local]
+  安装过程中不要选择安装显卡驱动器，否则可能会造成意想不到的后果。
+  ```
+
++ cudnn `Download cuDNN v8.4.0 (April 1st, 2022), for CUDA 11.x下面的Local Installer for Ubuntu18.04 x86_64 (Deb)`
+
++ 安装`sudo apt-get install zlib1g`（不知是否必要，参考的英伟达官网）
++ ninja安装`sudo apt install ninja-build`（注意安装完成后，按照window系统的做法，修改torch中的cpp_extension.py文件）
+
+```
+/home/ubuntu/anaconda3/lib/python3.9/site-packages/torch/utils/cpp_extension.py
+注意位置发生了变化，修改的位置变成了1682行
+```
+
++ 在neural_renderer文件夹下重复以下过程
+
+```
+1、python setup.py install
+2、ninja -f  build/temp.linux-x86_64-3.9/build.ninja
+1与2步重复3次，最后在运行一次第一步即可
+```
+
+
+
+## 参考资料
+
+[1]: https://blog.csdn.net/sinat_36458870/article/details/104522845	"linux Cuda安装"
+[2]: https://zhuanlan.zhihu.com/p/387156204	"cudnn安装"
 
