@@ -143,6 +143,14 @@ import neural_renderer
 
 ### 1  系统环境
 
+为防止安装cuda后，系统原有驱动器加载不了的情况，建议先删除系统原有的cuda。然后在安装cuda的时候，勾选安装驱动器即可。
+
+```
+sudo apt-get remove --purge '^nvidia-.*'
+sudo apt-get remove --purge '^libnvidia-.*'
+sudo apt-get remove --purge '^cuda-.*'
+```
+
 + ubuntu 18.04
 
   ```
@@ -185,10 +193,19 @@ import neural_renderer
 1与2步重复3次，最后在运行一次第一步即可
 ```
 
++ 最后为防止驱动自动更新照成不必要的麻烦，建议禁止自动更新
+
+```
+1、打开sudo vim /etc/apt/apt.conf.d/10periodic
+2、将文件中的1改成0
+```
+
 
 
 ## 参考资料
 
-[1]: https://blog.csdn.net/sinat_36458870/article/details/104522845	"linux Cuda安装"
-[2]: https://zhuanlan.zhihu.com/p/387156204	"cudnn安装"
+1. https://blog.csdn.net/sinat_36458870/article/details/104522845
+
+2. https://zhuanlan.zhihu.com/p/387156204
+3. https://forums.developer.nvidia.com/t/nvidia-smi-has-failed-because-it-couldnt-communicate-with-the-nvidia-driver-make-sure-that-the-latest-nvidia-driver-is-installed-and-running/197141/6?u=soft.wdh.craftman
 
