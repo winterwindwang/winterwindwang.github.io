@@ -172,7 +172,7 @@ sudo apt-get remove --purge '^cuda-.*'
 
   ```
   选择：Linux=>x86_64=>Ubuntu=>18.04=>runfile[local]
-  安装过程中不要选择安装显卡驱动器，否则可能会造成意想不到的后果。
+  注意！在删掉原始显卡驱动的情况下，选择安装显卡驱动（默认不用改选项）。
   ```
 
 + cudnn `Download cuDNN v8.4.0 (April 1st, 2022), for CUDA 11.x下面的Local Installer for Ubuntu18.04 x86_64 (Deb)`
