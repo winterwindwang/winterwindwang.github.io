@@ -76,5 +76,36 @@ Unreal Engine 4.27
 
 使用VS2019自带的`developr command prompt for vs 2019`进行编译
 
+VS2019需要安装SDK, SDK4.8可用
+
 参考：airsim详细教程(1)：win10配置airsim仿真环境(2021.8.12更新) - 宁子安的文章 - 知乎 https://zhuanlan.zhihu.com/p/267321662
 
+## Tesla 系列（T4）显卡上安装AirSim遇到的一些问题
+
+先说安装环境
+
+```
+VS2019
+win10专业版
+Epic（Unreal Engine 4.27）
+需安装显卡驱动
+最好安装.Net3.5和2.0框架
+```
+
+在使用T4显卡的win10系统上安装UE4.27会遇到以下问题：
+
+```
+运行引擎需要D3D11兼容GPU（功能级别11.0，着色器模型5.0）
+```
+
+参考这个[博客](https://www.pingxingyun.com/news/736177876327464960.html)，发现仅使用普通的英伟达显卡驱动无法启动UE仿真器。原因是Tesla原生驱动仅支持在TCC模式下工作，要使用UE仿真器（图形渲染器）需要WDDM模式。
+
+为解决上述问题，需要安装vGPU驱动，可以使用以下的链接下载对应的vGPU驱动
+
+```
+https://cloud.google.com/compute/docs/gpus/grid-drivers-table?hl=zh-cn
+```
+
+我使用`463.15_grid_win10_server2016_server2019_64bit_international.exe`后，发现可以打开UE4。（注意我得系统是win10，不是server系统，但好像不影响使用）。
+
+后续问题参考参考：airsim详细教程(1)：win10配置airsim仿真环境(2021.8.12更新) - 宁子安的文章 - 知乎 https://zhuanlan.zhihu.com/p/267321662
