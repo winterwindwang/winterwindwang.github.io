@@ -57,3 +57,105 @@ tags: markdow, recording
 | ![space-1.jpg](https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_1033306540-1.jpg) | ![space-1.jpg](https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_1033306540-1.jpg) |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |    <b>Image Credits - Fig.2 - 4K Mountains Wallpaper</b>     |                                                              |
+
+# 带字体颜色、大小
+
+<font color=red>我是红色</font>
+
+```markdown
+<font color=red>我是红色</font>
+```
+
+<font size=5>我是尺寸</font>
+
+```markdown
+<font size=5>我是尺寸</font>
+```
+
+# 具有合并功能表格
+
+可使用`http://www.tablesgenerator.com/markdown_tables`方法
+
+## 法1
+<table>
+  <tr>
+    <th>no</th>
+    <th>c1</th>
+    <th>c2</th>
+    <th>c3</th>
+  </tr>
+  <tr>
+    <td>a1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>b1</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>c1</td>
+    <td>3</td>
+    <td>3</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>d1</td>
+    <td>4</td>
+    <td>4</td>
+    <td>4</td>
+  </tr>
+</table>
+
+## 法2
+
+<table>
+<thead>
+  <tr>
+    <th></th>
+    <th colspan="3">CG</th>
+    <th colspan="3">GD</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td></td>
+    <td>error</td>
+    <td>residual</td>
+    <td>runtime</td>
+    <td>error</td>
+    <td>residual</td>
+    <td>runtime</td>
+  </tr>
+  <tr>
+    <td>k=5000</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>k=10000</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>k=50000</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
