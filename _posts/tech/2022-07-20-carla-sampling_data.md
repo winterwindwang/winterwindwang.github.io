@@ -74,6 +74,8 @@ camera_rgb_04 = world.spawn_actor(
 ```
 效果图：
 
+![image-20220812223110168](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20220812223110168.png)
+
 
 **4种不同相机高度**
 
@@ -83,31 +85,35 @@ camera_rgb_04 = world.spawn_actor(
 # 车后1米距离
 camera_rgb_01 = world.spawn_actor(
     cam_rgb_bp,
-    carla.Transform(carla.Location(x=-5, y=0,  z=1.0),
+    carla.Transform(carla.Location(x=-1, y=0,  z=1.0),
                     carla.Rotation(pitch=-22.5, yaw=0, roll=0)),
     attach_to=vehicle, attachment_type=Attachment.Rigid)
 
 # 车后1.5米距离
 camera_rgb_02 = world.spawn_actor(
     cam_rgb_bp,
-    carla.Transform(carla.Location(x=-5, y=0,  z=1.5),
+    carla.Transform(carla.Location(x=-1.5, y=0,  z=1.5),
                     carla.Rotation(pitch=-22.5, yaw=0, roll=0)),
     attach_to=vehicle, attachment_type=Attachment.Rigid)
 
 # 车后2米距离
 camera_rgb_03 = world.spawn_actor(
     cam_rgb_bp,
-    carla.Transform(carla.Location(x=-5, y=0,  z=2.0),
+    carla.Transform(carla.Location(x=-2, y=0,  z=2.0),
                     carla.Rotation(pitch=-22.5, yaw=0, roll=0)),
     attach_to=vehicle, attachment_type=Attachment.Rigid)
 
 # 车后2.5米距离
 camera_rgb_04 = world.spawn_actor(
     cam_rgb_bp,
-    carla.Transform(carla.Location(x=-5, y=0,  z=2.5),
+    carla.Transform(carla.Location(x=-2.5, y=0,  z=2.5),
                     carla.Rotation(pitch=-22.5, yaw=0, roll=0)),
     attach_to=vehicle, attachment_type=Attachment.Rigid)
 ```
+
+效果图如下
+
+![image-20220812223323877](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20220812223323877.png)
 
 **八种不同方位角**
 
@@ -171,3 +177,6 @@ camera_rgb_04 = world.spawn_actor(
     attach_to=vehicle, attachment_type=Attachment.Rigid)
 ```
 
+效果图如下：
+
+![image-20220812223407687](https://gitee.com/freeneuro/PigBed/raw/master/img/image-20220812223407687.png)
