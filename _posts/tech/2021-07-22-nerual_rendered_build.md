@@ -139,6 +139,14 @@ import neural_renderer
 
 解决上述问题以后，就应该可以成功的安装neural_renderer。
 
+6. 如果遇到类似于如下的问题
+
+```python
+LINK : fatal error LNK1181: 无法打开输入文件
+```
+
+则打开`x64 Native Tool command`这个cmd终端，应该就能解决问题。
+
 #### # Linux 系统
 
 ### 1  系统环境
