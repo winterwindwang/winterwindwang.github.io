@@ -65,6 +65,65 @@ scons
 
 遇到最大的问题就是`git submodule update --init --recursive`，在开启代理的情况下，使用`git clone https:`拉取代码会出错。关闭代理就不会出现这个问题，但是容易超时。为此，我将mitsuba文件夹中`.gitmodules`的`https:`修改成`git@github.com`（即ssh形式），然后就可以拉取成功了。如果后续还会出现错误，可以尝试关闭代理，然后再执行命令`git submodule update --init --recursive`
 
+在python中使用mitsuba2时候，要改变mitsuba中的`variants`,即打开`mitsuba.conf`在其xx行添加以下几行(注意不要超过5个，否则编译过程会非常慢)：
+
+```
+packet_rgb,
+packet_spectral, // python使用以上两个
+gpu_rgb,
+gpu_autodiff_rgb,
+gpu_autodiff_spectral, // 如果用gpu渲染，那么就只用上面几个
+```
+
+添加完后直接使用命令编译
+
+```
+cmake -G "Visual Studio 16 2019" -A x64
+```
+
+会报以下错误
+
+```
+CMake Error at :
+  No CUDA toolset found.
+```
+
+为解决该问题，查询这里[资料](https://stackoverflow.com/a/68120870)可知。但是如果要加入gpu可微分的约束，那么就需要VS2019支持cuda编译，具体操作如下，将目录 `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\extras\visual_studio_integration\MSBuildExtensions`中的中的四个文件复制到`xxx\Microsoft Visual ，Studio\2019\MSBuild\Microsoft\VC\v160\BuildCustomizations`，这样cmake就能使用cuda编译。（注意VS2017则不存在这个问题，而且`BuildCustomizations`的位置也与VS2019也不一样）
+
+注意！！！！：不要自己拉ext里面的文件，否则会出现版本对不上的问题从而导致cmake出错。我遇到的就是libpng编译没通过的问题，问题大概是
+
+````
+set_prop(TARGET， png16) png16报错
+````
+
+一番查找过后才发现，是因为libpng目录中的cmake文件没有png16，而通过`recursive`方式下载的文件里面有png16。
+
+针对这个问题，有另一种解决思路：利用git回滚
+
+比如说针对`libpng @ 7f4528d`，在利用git clone 拉取libpng以后，使用以下命令，可完成版本的更换
+
+```
+>> cd libpng
+>> git reset --hard 7f4528d
+```
+
+最终就可以生成mitsuba.sln文件了（由于我用的RTX3070，cuda11.1，所以没法完成编译，因此先暂时不用gpu的配置了）
+
+接着，别用右键用vs2019打开。要先打开vs2019，然后`打开项目或解决方案`
+
+参考：
+
+```
+1、https://www.cnblogs.com/FromATP/p/14920877.html
+2、https://www.cnblogs.com/FromATP/p/14920877.html
+```
+
+注意：修改cmake文件以后，要修改
+
+#### 续：Linux安装
+
+
+
 # AirSim 安装
 
 环境要求:

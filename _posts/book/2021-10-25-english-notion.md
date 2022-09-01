@@ -135,6 +135,16 @@ keywords: notes
 116. Further, our method **surpasses** the state-of-the-art whitebox KED-MI attack on Pubfig83
      and achieves a close attack accuracy on the CelebA dataset.
 117. In particular, BREP-MI **outperforms** GMI and the blackbox attack **by a substantial margin for all model architectures**.
+118. In the course of our experiments, 在我们的实验过程中
+119. Unless otherwise mentioned  除非另有说明
+120. **The rationale behind doing so is** to craft adversarial perturbations that are tolerant to slight movements that are natural when physically wearing the frames.  **这样做的理由是**
+121. our user-study participants **deemed as distinguishable from** real eyeglasses’ patterns
+122. **The phenomenon holds generally across different setups**.
+123. The WIDER FACE dataset contains 32,203 images and 393,703 annotated face bounding boxes **with high degree of variability in scales, poses, occlusions, expression, makeup, and illumination.**
+124. We randomly initialize the patch, and set α = 0.5，**unless otherwise specified**.
+125. **We observe a similar phenomenon for all these setups**, as shown in Fig. 5.
+126. the Patch-IoU can **cause the recall to decrease dramatically across different initialization**, leading to a successful attack.
+127. In this experiment, **we test 9 different angles ranging from -60◦ to 60◦** by rotating the turntable **with a 15-degree increment** at a time to take photos. To accurately capture the angle, we print one image at  a time (instead of 6 images per paper). For this experiment, we only compare our D2Pp method with the best performing baseline, the EOT method (ε = 30).
 
 ## 词汇
 
@@ -222,8 +232,15 @@ keywords: notes
 82. at present  目前，当前
 76.  solve/address  解决问题
 76.  indicates,represents,denotes  
-76.  imperative /necessary
-76.  ascribes 
+85. imperative /necessary   adj. 必要的, 紧急的, 极重要的;命令的;祈使的 n. 必要的事, 必须完成的事;祈使语气
+86. ascribes  把…归于 sb ascribes sth to 
+87. by leveraging 利用
+88. ad-hoc Ad hoc 是一个拉丁文常用短语。 这个短语的意思是“特设的、特定目的的（地）、即席的、临时的、将就的、专案的”。 这个短语通常用来形容一些特殊的、不能用于其它方面的，为一个特定的问题、任务而专门设定的解决方案。
+89. inconspicuousness  不显眼
+90. the color gamut of our printer
+91. on-the-fly, in practical
+92. highlighting 强调
+93. with respect to (w.r.t.)
 
 
 
