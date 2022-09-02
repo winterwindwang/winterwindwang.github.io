@@ -111,14 +111,147 @@ set_prop(TARGET， png16) png16报错
 
 接着，别用右键用vs2019打开。要先打开vs2019，然后`打开项目或解决方案`
 
+#### 最新！！！完成安装
+
+系统参数：
+
++ RTX 3070
++ CUDA 11.0
++ PYTHON 3.7
++ CMake 3.21.0
++ win10
++ optix 7.0
++ compiled variants
+  + scalar_rgb
+  + gpu_autodiff_rgb
+  + gpu_rgb
+
+1、先按照参考资料1拉取github仓库
+
+2、如果要使用gpu，好像需要下载optix，去[官网](https://developer.nvidia.com/designworks/optix/downloads/legacy)下载就好了。下载完后，安装好。
+
+3、在目录`mitsuba2/resource/ptx/`编译Makefile，这里面需要指定刚刚下载好的optix目录地址
+
+```
+mts_include_folder = ../../include
+mts_shape_folder   = ../../src/shapes/optix
+mts_optix_main     = ../../src/librender/optix/optix_rt.cu
+
+all: optix_rt.ptx
+
+optix_rt.ptx: $(mts_optix_main) $(mts_include_folder)/* $(mts_shape_folder)/*
+	nvcc $(mts_optix_main) \
+		 -I $(mts_include_folder) -I $(mts_shape_folder) -I /opt/optix-7.0.0/include/ \
+		 -O3 -gencode arch=compute_61,code=compute_61 --ptx
+
+clean:
+	rm -f optix_rt.ptx
+	
+============================
+将-I /opt/optix-7.0.0/include/ 修改成-I "C:/ProgramData/NVIDIA Corporation/OptiX SDK 7.0.0/include"
+然后将-O3 -gencode arch=compute_61,code=compute_61 --ptx 中的结构改成（根据使用的显卡改，RTX3070本来是86，但是86会报错，改80不会报这个错）
+-O3 -gencode arch=compute_80,code=compute_80 --ptx
+============================ 修改后版本================
+mts_include_folder = ../../include
+mts_shape_folder   = ../../src/shapes/optix
+mts_optix_main     = ../../src/librender/optix/optix_rt.cu
+
+all: optix_rt.ptx
+
+optix_rt.ptx: $(mts_optix_main) $(mts_include_folder)/* $(mts_shape_folder)/*
+	nvcc $(mts_optix_main) \
+		 -I $(mts_include_folder) -I $(mts_shape_folder) -I "C:/ProgramData/NVIDIA Corporation/OptiX SDK 7.0.0/include" \
+		 -O3 -gencode arch=compute_80,code=compute_80 --ptx
+
+clean:
+	rm -f optix_rt.ptx
+```
+
+修改完后，可能还会遇到`cl.exe`不存在的问题，如果用VS2019自带的x64命令行终端应该不会出现这个问题，我是将对应的`cl.exe`配置到环境变量中
+
+```
+E:\software\VS2017\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64
+```
+
+配置完后，在powershell或其他终端（没尝试过其他终端）运行以下命令
+
+```
+bash Makefile
+```
+
+4、修改CMake文件，这里我选择的是CMake 3.21.0, 因为CMake 3.18.3不存在以下选项。在文件`xxx\CMake\3.21.0\share\cmake-3.21\Modules\Compiler\NVIDIA-CUDA.cmake`的91行左右有
+
+```
+  if (NOT CMAKE_CUDA_COMPILER_VERSION VERSION_LESS 9.0)
+    if(CMAKE_CUDA_SIMULATE_VERSION VERSION_GREATER_EQUAL 19.10.25017)
+      set(CMAKE_CUDA14_STANDARD_COMPILE_OPTION "-std=c++14")
+      set(CMAKE_CUDA14_EXTENSION_COMPILE_OPTION "-std=c++14")
+    else()
+      set(CMAKE_CUDA14_STANDARD_COMPILE_OPTION "")
+      set(CMAKE_CUDA14_EXTENSION_COMPILE_OPTION "")
+    endif()
+  endif()
+============================修改成
+  if (NOT CMAKE_CUDA_COMPILER_VERSION VERSION_LESS 9.0)
+    if(CMAKE_CUDA_SIMULATE_VERSION VERSION_GREATER_EQUAL 19.10.25017)
+      # set(CMAKE_CUDA14_STANDARD_COMPILE_OPTION "-std=c++14")
+      # set(CMAKE_CUDA14_EXTENSION_COMPILE_OPTION "-std=c++14")
+    else()
+      set(CMAKE_CUDA14_STANDARD_COMPILE_OPTION "")
+      set(CMAKE_CUDA14_EXTENSION_COMPILE_OPTION "")
+    endif()
+  endif()
+```
+
+5、完成以上步骤以后，（若使用conda虚拟环境，则激活虚拟环境，这一步很关键，因为好像只能为特定Python编译mitsuba2）使用以下命令编译库
+
+```
+cmake -G "Visual Studio 16 2019" -A x64
+```
+
+6、然后，可以选择打开VS2019，然后打开项目或解决方案的方式打开mitsuba.sln，将debug改成release模型进行运行，但是这种方式好像没法控制使用python的版本，会使用默认环境下的python，无法用特定虚拟环境中的python编译。因此，我采用了另外一种思路，即在mitsuba2目录下，使用以下命令运行
+
+```
+cmake --build ..(如果错误，就用一个点)
+```
+
+这样运行就不会出现错误了。
+
+7、设置path，运行setpath
+
+```
+setpath
+```
+
+完成后，键入mitsuba，如果不报错就安装成功了。同时可以在同一个命令行下进入python终端，导入mitsuba，如果没报错就算是安装成功了。最后！！！如果要在python中使用，还需要将目录配置到环境变量中。
+
+8、配置环境变量
+
+```
+向系统环境变量（Path）添加
+F:\PythonPro\mitsuba2_gpu\dist;F:\PythonPro\mitsuba2_gpu\build\dist;
+新建PYTHONPATH，然后添加
+F:\PythonPro\mitsuba2_gpu\dist\python
+F:\PythonPro\mitsuba2_gpu\build\dist\python
+```
+
+注意此时虽然在命令行里面能访问mitsuba，但是在pycharm里面还是访问不到mitsuba。
+
+以上问题，重启电脑就解决了。
+
 参考：
 
 ```
 1、https://www.cnblogs.com/FromATP/p/14920877.html
-2、https://www.cnblogs.com/FromATP/p/14920877.html
+2、https://github.com/mitsuba-renderer/enoki/issues/70
+3、https://github.com/mitsuba-renderer/mitsuba2/issues/569
 ```
 
-注意：修改cmake文件以后，要修改
+注意：每次修改cmake文件以后，都需要将之前生成的文件删掉，以防修改不起作用。
+
+
+
+
 
 #### 续：Linux安装
 
