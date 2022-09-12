@@ -239,6 +239,10 @@ F:\PythonPro\mitsuba2_gpu\build\dist\python
 
 以上问题，重启电脑就解决了。
 
+但是仍然存在问题：
+
+mitsuba与其他库比如torch无法同时导入到项目里面，故而还是用不了，学习mitsuba3去了，放弃mitsuba2了（心累）。
+
 参考：
 
 ```
@@ -249,13 +253,76 @@ F:\PythonPro\mitsuba2_gpu\build\dist\python
 
 注意：每次修改cmake文件以后，都需要将之前生成的文件删掉，以防修改不起作用。
 
-
-
-
-
 #### 续：Linux安装
 
+系统配置：
 
+```
+1、Linux 18.04
+2、CMAKE 3.14.7
+3、ninja 1.8.2
+4、driver 510.39.01
+5、Tesla T4
+7、cuda 11.1
+8、python 3.9
+9、GCC 8.4.0
+```
+
+1、跟着官方教程走
+
+2、CMAKE版本太低的问题：重新安装CMAKE，参考[这里](https://codeyarns.com/tech/2019-03-20-how-to-install-cmake.html#gsc.tab=0)。ninja可以使用默认安装版本。
+
+3、在使用`git clone --recursive https://github.com/mitsuba-renderer/mitsuba2`拉取项目以后，多次使用以下命令拉取子模块
+
+```
+git submodule update --init --recursive
+```
+
+4、将resource中的mitsuba.conf.template复制到mitsuba2根目录下，并修改其名字为mitsuba.conf。 然后更改mitsuba.conf中enabled的设置，使其允许可微分渲染
+
+```
+   "enabled": [
+        # The "scalar_rgb" variant *must* be included at the moment.
+        "scalar_rgb",
+        "scalar_spectral"，
+        "gpu_rgb",
+        "gpu_autodiff_rgb"
+    ],
+```
+
+5、使用以下步骤安装（依次运行）
+
+```
+mkdir build
+cd build/
+cmake -GNinja ..
+ninja
+
+# 上述命令如果没报错就直接下一步
+source setpath.sh
+python
+import mitsuba as mi
+如果能正确导入，则说明安装成功
+```
+
+在上述几个步骤中可能会遇到一些问题，比如说系统的lib文件与anconda中的lib文件冲突，网上建议是删掉anconda中对应的文件。
+
+6、路径设置（p.s， 网上都说设置环境变量，却没说怎么设置，如果按setpath.sh输出的那种设置，系统还是找不到对应的mitsuba），以下是系统建议的路径
+
+```
+export PYTHONPATH="$MITSUBA_DIR/dist/python:$MITSUBA_DIR/$BUILD_DIR/dist/python:$PYTHONPATH"
+export PATH="$MITSUBA_DIR/dist:$MITSUBA_DIR/$BUILD_DIR/dist:$PATH"
+```
+
+以上路径设置在`~/.bashrc`中以后，仍然没有效果。分析一通后发现，没有指定MITSUBA_DIR，系统不知道该位置在何处，因此在`~/.bashrc`中需要加上该地址。最终在`~/.bashrc`中添加以下几行
+
+```
+export MITSUBA_DIR="/xx/mitsuba2/build" # 其中xx为mitsuba2在你系统中的地址
+export PYTHONPATH="$MITSUBA_DIR/dist/python:$MITSUBA_DIR/$BUILD_DIR/dist/python:$PYTHONPATH"
+export PATH="$MITSUBA_DIR/dist:$MITSUBA_DIR/$BUILD_DIR/dist:$PATH"
+```
+
+完后，`source ~/.bashrc`mitsuba就能被系统识别了。
 
 # AirSim 安装
 
