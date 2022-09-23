@@ -3,7 +3,7 @@ layout: post
 title: 可微分渲染器Mitsuba3学习
 category: 技术
 keywords: 渲染器、仿真平台
-tags: technical detaian
+tags: technical detail
 ---
 
 # 1、安装

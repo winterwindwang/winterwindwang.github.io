@@ -145,6 +145,10 @@ keywords: notes
 125. **We observe a similar phenomenon for all these setups**, as shown in Fig. 5.
 126. the Patch-IoU can **cause the recall to decrease dramatically across different initialization**, leading to a successful attack.
 127. In this experiment, **we test 9 different angles ranging from -60◦ to 60◦** by rotating the turntable **with a 15-degree increment** at a time to take photos. To accurately capture the angle, we print one image at  a time (instead of 6 images per paper). For this experiment, we only compare our D2Pp method with the best performing baseline, the EOT method (ε = 30).
+128. Intuitively, different channels have high responses to different features, and a larger Mean Magnitude of a Channel (MMC) implies that the model puts more emphasis on this channel, hoping that this channel is more important for the task at hand.
+129. between the original MMC of the training set (mini-train) and each test set, to see
+     how much neural networks change channel emphasis when faced with novel tasks
+130. In this section, **we aim to show how** its formulation makes SIA effective against IDs as well
 
 ## 词汇
 
@@ -241,6 +245,8 @@ keywords: notes
 91. on-the-fly, in practical
 92. highlighting 强调
 93. with respect to (w.r.t.)
+94. Intuitively
+95. the channels of features 
 
 
 
