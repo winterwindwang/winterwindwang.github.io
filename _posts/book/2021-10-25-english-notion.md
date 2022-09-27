@@ -149,6 +149,7 @@ keywords: notes
 129. between the original MMC of the training set (mini-train) and each test set, to see
      how much neural networks change channel emphasis when faced with novel tasks
 130. In this section, **we aim to show how** its formulation makes SIA effective against IDs as well
+131. All our tabulated results are shown for one iteration, alpha= 250 and  = 10-3, unless otherwise stated. 
 
 ## 词汇
 
@@ -247,6 +248,9 @@ keywords: notes
 93. with respect to (w.r.t.)
 94. Intuitively
 95. the channels of features 
+96. which is relatively 6 times smaller.
+97. indeed effective 确实有效果
+98. our intuition 我们的直觉
 
 
 
