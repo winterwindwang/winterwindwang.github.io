@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 深度神经网络中的各种网络结构
-category: deeplearning
+category: 深度学习技术
 tag: graphic, networks overview
 keywords: 神经网络结构
 ---

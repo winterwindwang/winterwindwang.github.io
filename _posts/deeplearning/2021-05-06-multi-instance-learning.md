@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 多示例学习
-category: deeplearning
+category: 深度学习技术
 tags: 多示例学习
 keywords: 机器学习，多示例学习 
 ---

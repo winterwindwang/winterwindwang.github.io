@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 深度学习中的激活函数
-category: deeplearning
+category: 深度学习技术
 tags: deep learning, activation function
 keywords: deep learning, activation function
 ---

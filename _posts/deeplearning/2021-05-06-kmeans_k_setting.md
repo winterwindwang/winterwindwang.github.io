@@ -1,7 +1,7 @@
 ---
 layout: post
 title: K-Means算法中K值得选择
-category: deeplearning
+category: 深度学习技术
 tags: 机器学习，无监督学习，K-Means算法，K值选择
 keywords: 机器学习，无监督学习，K-Means算法，K值选择
 ---

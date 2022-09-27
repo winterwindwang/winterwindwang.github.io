@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 高级树结构
-category: deeplearning
+category: 深度学习技术
 tag: tree structure
 keywords: tree, hash tree, B+ tree
 ---

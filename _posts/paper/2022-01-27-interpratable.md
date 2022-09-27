@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 模型可解释性
-category: 论文阅读
+category: 文献阅读
 keywords: neural network feature, interpability 
 tags: 网络特征相关, 神经网络可解释性
 ---
