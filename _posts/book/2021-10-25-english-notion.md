@@ -36,7 +36,7 @@ keywords: notes
 26. has introduced an efficient one-step attack method, widely known as the Fast Gradient Sign Method (FGSM). [27] has extended the basic FGSM to its iterative variant, i.e. I-FGSM,
 27. For consistency we follow prior works [38, 46, 41] and adopt l∞ = 10/255. Unless otherwise specified, the UAP in this work is by default untargeted
 28. Concurrent to [46], [20] adopts a similar approach.
-29. **Our results align well with** [61] that identifies frequency as a factor for the classwise robustness gap against targeted UAP
+29. **Our results align well with** [61] that identifies frequency as a factor for the class-wise robustness gap against targeted UAP
 30. Overall, **there is a general consensus** among the UAP researchers that crafting UAP with limited or no data is challenging.
 31. For a detailed description of their various methods, **we refer the readers to** [31].
 32. Universal adversarial perturbation (UAP), i.e. a single perturbation to fool the network for most images, is widely recognized as a more practical attack because the UAP can be generated beforehand and applied directly during the attack stage.  通用对抗扰动的描述
@@ -150,6 +150,37 @@ keywords: notes
      how much neural networks change channel emphasis when faced with novel tasks
 130. In this section, **we aim to show how** its formulation makes SIA effective against IDs as well
 131. All our tabulated results are shown for one iteration, alpha= 250 and  = 10-3, unless otherwise stated. 
+132. **We believe this** accuracy improvement **is due to** pruning finding the right capacity of the network and hence reducing overfitting
+133. **making it imperative** to evaluate viewpoint robustness 评估视觉鲁棒性很有必要
+134. We strive for completeness, but given the high activity on this topic, with new papers constantly coming out, t**here will be further improvements in attacks and defenses that are not covered here**. Nonetheless, the most representative attacks and defenses, which reveal how broad this research field is and how distinct the proposed solutions are, can be found in this article.(综述写作套话)
+135. **On one side**, adversarial examples pose potential security threats by attacking or misleading the practical deep learning applications like auto driving and face recognition system, which
+     may cause pecuniary loss or people death with severe impairment. **On the other side**, adversarial examples are also valuable and beneficial to the deep learning models, as they are able to provide insights into their strengths, weaknesses, and blind-spots.
+136. Network-based techniques have achieved satisfying performance owning to their great power for generating high-quality synthetic data.
+137. The experimental results show that our PS-GAN can not only consistently outperforms state-of-the-art adversarial patch attack methods, but also owns strong generalization ability and transferability.
+138. we propose an optimization algorithm that uses minimum perturbation and adversarial confidence thresholds to alternate between the minimization of adversarial loss and stealthiness loss.
+139. We conduct ablations on these techniques to see how each component contributes.
+140. For example, considering the DTD dataset, the best baseline FFF one achieves an attack success rate of 48.52%, while the ASR of the villain L4Abase is up to 50.69%, and the fusing loss further boosts the performance to 50.74%.
+141. we found that **alternately updating** δ on A **and** B yields a better result
+142. **The characteristic of using non-overlapping patches in ViTs** reduces the influence of adversarial examples with the same noise magnitude on the overall results
+143. In the proposed Adv-Attribute, for the first time, we design a flexible multi-objective optimization paradigm to **better balance the trade-off** between stealthiness and attacking strength
+144. In addition to the face recognition, our method is also applicable to other scenarios, such as the traffic sign recognition task.
+145. On the commercial API, **performance drops slightly compared to the open-source model**,
+     but remains **at an acceptable level**.
+146. **will not arouse people’s suspicion**
+147. we propose a Basin Hopping Evolution (BHE) algorithm to find the appropriate transparency
+     of the watermark image and the appropriate position within the host image to embed watermark.
+148. I-FGSM constructs an adversarial example by multi-step and smaller movements, which greatly improves the success rate of the attack.
+149. **integrated seamlessly into existing methods** for a broad class of machine learning tasks
+150. In summary, **the current performance of transfer attacks is still unsatisfactory**, **especially for** targeted attacks.
+151. Thus **it is imperative** to develop more robust 3D recognition models, which we **leave to future work.**.
+152. To address this issue, our key insight is to consider the worst-case transformations rather than their expectation,
+     since if the adversarial examples are resistant to the most harmful physical transformations,
+     they can also resist much weaker transformations,
+153. method **quantitatively and qualitatively outperforms** state-of-the-art view synthesis methods,
+154. Furthermore, this strategy requires a template mesh with fixed topology to be provided as an initialization before optimization [22], **which is typically unavailable for** unconstrained real-world scenes.
+155. We **circumvent this problem** **by instead encoding** a continuous volume within the parameters of a deep fully-connected neural network, **which not only produces** significantly higher quality renderings than prior volumetric approaches, **but also requires** just a fraction of the storage cost of those sampled volumetric representations.
+156. Since the success of deep learning mainly takes roots in its ability to extract features that can be used to classify images well, outputs of the layers of a well-trained deep neural network have already contained semantic meaning.
+157. In all experiments, we use the following training parameters, unless mentioned otherwise.
 
 ## 词汇
 
@@ -191,7 +222,7 @@ keywords: notes
 36. be made up of 由什么组成
 37. justified explanation  合理的解释
 38. alternative explanation 替代解释
-39. ounter-intuitive 违法直觉的
+39. counter-intuitive 违法直觉的
 40. If this would be the case 如果是这样的话
 41. quasi-imperceptible 不可感知  
 42. discrepancy n. 差异，不符合(之处)；不一致(之处)
@@ -246,17 +277,33 @@ keywords: notes
 91. on-the-fly, in practical
 92. highlighting 强调
 93. with respect to (w.r.t.)
-94. Intuitively
+94. Intuitively  adv. 直觉地;直观地； 由直觉而得地
 95. the channels of features 
 96. which is relatively 6 times smaller.
 97. indeed effective 确实有效果
 98. our intuition 我们的直觉
-
-
-
-
-
-
-
-
+99. effectiveness and efficiency 有效性和效率
+100. precisely 精确的
+101. ongoing 继续  （so this line of research is still ongoing）
+102. In an analogous manner （在以类似的方式）
+103. literature  1.文学, 文学作品 2.文献, 图书资料
+104. The initial experimental results showed that the minimum average distortion is very low and can not be distinguished by human observers.
+105. To sum up, anyhow, anyway, in a word, in conclusion, on all accounts, to sum up
+106. jeopardize  *vt.* 危及, 损害
+107. qualitatively and quantitatively  定性和定量
+108. corroborate
+109. intra-architecture and inter-architecture cases
+110. tampering
+111. the feasibility and generalizability of PAR
+112. physically-realizable forms
+113. easy to perceive
+114. ubiquitous
+115. is tailored to 等价于 be designed to
+116. a recent line of work
+117. open interval 开集
+118. engender/yield/produce 产生
+119. deficiencies 不足之处， of prior work
+120. facilitates/utilize/use
+121. In light of this observation,
+122. is conducive to
 

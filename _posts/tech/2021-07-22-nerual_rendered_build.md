@@ -71,6 +71,21 @@ import neural_renderer
 
 ### 4 纯torch版本的安装和遇到的问题以及解决方案
 
+#### 更新：ninja安装
+
+1. window
+
+```git
+git clone https://github.com/ninja-build/ninja && cdd ninja
+python configure.py --bootstrap
+```
+
+
+
+1. linux(待续)
+
+
+
 与Chainer版本类似，首先拉取github仓库；
 
 然后在安装了pytorch的conda环境下，运行以下命令`python setup.py install`进行安装。
@@ -147,7 +162,7 @@ LINK : fatal error LNK1181: 无法打开输入文件
 
 则打开`x64 Native Tool command`这个cmd终端，应该就能解决问题。
 
-#### # Linux 系统
+# Linux 系统
 
 ### 1  系统环境
 
@@ -208,7 +223,11 @@ sudo apt-get remove --purge '^cuda-.*'
 2、将文件中的1改成0
 ```
 
+## 2 V100, cuda 10.2, Pytorch 1.10.2
 
+1. 遇到问题`error: [Errno 2] No such file or directory: ':/usr/local/cuda-10.2/bin/nvcc'`，解决方案`export CUDA_HOME=/usr/local/cuda`[参考](https://github.com/NVIDIA/apex/issues/368)。
+
+2. 遇到问题`he detected CUDA version (10.2) mismatches the version that was used to compile PyTorch (11.3). Please make sure to use the same CUDA versions`，原因：自己装的cuda与镜像自带的cuda toolkit版本不一致，导致在base环境下安装失败。解决方案：创建新环境`conda create -n ml python==3.6`。然后再执行`python setup install`
 
 ## 参考资料
 
