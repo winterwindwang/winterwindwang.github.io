@@ -181,6 +181,7 @@ keywords: notes
 155. We **circumvent this problem** **by instead encoding** a continuous volume within the parameters of a deep fully-connected neural network, **which not only produces** significantly higher quality renderings than prior volumetric approaches, **but also requires** just a fraction of the storage cost of those sampled volumetric representations.
 156. Since the success of deep learning mainly takes roots in its ability to extract features that can be used to classify images well, outputs of the layers of a well-trained deep neural network have already contained semantic meaning.
 157. In all experiments, we use the following training parameters, unless mentioned otherwise.
+158. Different body parts such legs, head and muscles are stylized appropriately in accordance with their semantic role, and these styles are blended seamlessly across the surface to form a cohesive texture.
 
 ## 词汇
 
@@ -266,8 +267,8 @@ keywords: notes
 80. degrades  vt. 使……丢脸；使……降级；使……降解；贬低 vi. 退化；降级，降低
 81. in practice  实际上，事实上；在实践中
 82. at present  目前，当前
-76.  solve/address  解决问题
-76.  indicates,represents,denotes  
+83. solve/address  解决问题
+84. indicates,represents,denotes  
 85. imperative /necessary   adj. 必要的, 紧急的, 极重要的;命令的;祈使的 n. 必要的事, 必须完成的事;祈使语气
 86. ascribes  把…归于 sb ascribes sth to 
 87. by leveraging 利用
@@ -306,4 +307,17 @@ keywords: notes
 120. facilitates/utilize/use
 121. In light of this observation,
 122. is conducive to
+123. harnessing 利用 exploit/utilize/use/leverages/make use of 
+124. postulate/speculate/conjecture 推测
+125. exemplar   n. 模型, 模范  原型, 典型
+126. inductive bias 归纳偏置
+127. synergy  n. 协同作用；协同；增效
+128. In a nutshell 简短地说
+129. A and B are comparative A与B相当
+130. the premise of ...的前提
+131. a granularity of 粒度为（例句range the internal update frequency M from 0 to 32 **with a granularity of** 4.）
+132. preserve 保留
+133. dubbed 称为
+134. alleviates 消除
+135. scarcity   n. 缺乏；不足
 
