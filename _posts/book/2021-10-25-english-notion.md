@@ -182,6 +182,8 @@ keywords: notes
 156. Since the success of deep learning mainly takes roots in its ability to extract features that can be used to classify images well, outputs of the layers of a well-trained deep neural network have already contained semantic meaning.
 157. In all experiments, we use the following training parameters, unless mentioned otherwise.
 158. Different body parts such legs, head and muscles are stylized appropriately in accordance with their semantic role, and these styles are blended seamlessly across the surface to form a cohesive texture.
+159. **computationally intensive (expensive) and time consuming  (and costly)**
+160. watermarking is frequently used to prove image ownership as a form of copyright protection.  As such, watermarking methods prioritize robustness over secrecy: messages should be recoverable even after the encoded image is modified or distorted.
 
 ## 词汇
 
@@ -303,21 +305,23 @@ keywords: notes
 116. a recent line of work
 117. open interval 开集
 118. engender/yield/produce 产生
-119. deficiencies 不足之处， of prior work
-120. facilitates/utilize/use
-121. In light of this observation,
-122. is conducive to
-123. harnessing 利用 exploit/utilize/use/leverages/make use of 
-124. postulate/speculate/conjecture 推测
-125. exemplar   n. 模型, 模范  原型, 典型
-126. inductive bias 归纳偏置
-127. synergy  n. 协同作用；协同；增效
-128. In a nutshell 简短地说
-129. A and B are comparative A与B相当
-130. the premise of ...的前提
-131. a granularity of 粒度为（例句range the internal update frequency M from 0 to 32 **with a granularity of** 4.）
-132. preserve 保留
-133. dubbed 称为
-134. alleviates 消除
-135. scarcity   n. 缺乏；不足
+119. facilitates/utilize/use
+120. In light of this observation,
+121. is conducive to
+122. harnessing 利用 exploit/utilize/use/leverages/make use of 
+123. postulate/speculate/conjecture 推测
+124. exemplar   n. 模型, 模范  原型, 典型
+125. inductive bias 归纳偏置
+126. synergy  n. 协同作用；协同；增效
+127. In a nutshell 简短地说
+128. A and B are comparative A与B相当
+129. the premise of ...的前提
+130. a granularity of 粒度为（例句range the internal update frequency M from 0 to 32 **with a granularity of** 4.）
+131. preserve 保留
+132. dubbed 称为
+133. alleviates 消除
+134. scarcity   n. 缺乏；不足 / deficiencies 不足之处， of prior work
+135. progressively 渐进的
+136. A surge of
+137. the penultimate layer 中间层
 
