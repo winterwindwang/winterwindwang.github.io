@@ -1,5 +1,5 @@
 ---
-title: Person CV
+title: CV
 layout: post
 ---
 
