@@ -52,16 +52,16 @@ layout: post
 
 ### <span style="font-family:Georgia;font-size:20px;color:#262626">Publication</span>
 
-> + **Donghua Wang**,  Wen Yao, Tingsong Jiang, Weien Zhou, Lang Lin and Xiaoqian Chen. "[**A Plug-and-Play Defensive Perturbation for Copyright Protection of DNN-based Applications**](https://arxiv.org/pdf/2304.10679.pdf)." (Under Review)
-> + Donghua Wang and Wen Yao and Tingsong Jiang and Guijian Tang and Xiaoqian Chen. "[**A Survey on Physical Adversarial Attack in Computer Vision**](https://arxiv.org/pdf/2209.14262.pdf)." (Under Review), [Paper List](https://github.com/winterwindwang/Physical-Adversarial-Attacks-Survey)
->
-> + **Donghua Wang**, Wen Yao , Tingsong Jiang and Xiaoqian Chen. "[**Advops: Decoupling Adversarial Examples**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4332122)." (Under Review)
->
-> + **Donghua Wang**, Tingsong Jiang, Jialiang Sun, Weien Zhou, Xiaoya Zhang, Zhiqiang Gong, Wen Yao and Xiaoqian Chen. "[**FCA: Learning a 3D Full-coverage Vehicle Camouflage for Multi-view Physical Adversarial Attack**](https://ojs.aaai.org/index.php/AAAI/article/view/20141)."*Proceedings of the AAAI Conference on Artificial Intelligence*, *36*(2), 2414-2422, 2022. [<font color=red>CCF-A</font>], [CODE](https://github.com/winterwindwang/Full-coverage-camouflage-adversarial-attack)
-> + **Donghua Wang**, Li Dong, Rangding Wang, Diqun Yan. "[**Fast speech adversarial example generation for keyword spotting system with conditional GAN**](https://www.sciencedirect.com/science/article/pii/S0140366421003042)". *Computer Communications*, 2021: 145-156. [<font color=red>CCF-C</font>], [CODE](https://github.com/winterwindwang/KWSAttackAdvCGAN)
-> + **Donghua Wang**, Rangding Wang, Li Dong, Diqun Yan, Yiming Ren. "[**Efficient generation of speech adversarial examples with generative model**](https://link.springer.com/chapter/10.1007/978-3-030-69449-4_19)." *Digital Forensics and Watermarking: 19th International Workshop*, IWDW 2020. 
-> + **Donghua Wang**, Rangding Wang, Li Dong, Diqun Yan, Xueyuan Zhang, Yongkang Gong. "[**Adversarial examples attack and countermeasure for speech recognition system: A survey**](https://link.springer.com/chapter/10.1007/978-981-15-9129-7_31)"  *Proceedings of Security and Privacy in Digital* Economy, vol 1268, 2020. 
-> + **Donghua Wang**, Li Dong, Rangding Wang, Diqun Yan, Jie Wang. "[**Targeted speech adversarial example generation with generative adversarial network**](https://ieeexplore.ieee.org/abstract/document/9129727/)." *IEEE Access*, 2020: 124503-124513.
++ **Donghua Wang**,  Wen Yao, Tingsong Jiang, Weien Zhou, Lang Lin and Xiaoqian Chen. "[**A Plug-and-Play Defensive Perturbation for Copyright Protection of DNN-based Applications**](https://arxiv.org/pdf/2304.10679.pdf)." (Under Review)
++ **Donghua Wang** ,  Wen Yao, Tingsong Jiang, Guijian Tang and Xiaoqian Chen. "[**A Survey on Physical Adversarial Attack in Computer Vision**](https://arxiv.org/pdf/2209.14262.pdf)." (Under Review), [Paper List](https://github.com/winterwindwang/Physical-Adversarial-Attacks-Survey)
+
++ **Donghua Wang**, Wen Yao , Tingsong Jiang and Xiaoqian Chen. "[**Advops: Decoupling Adversarial Examples**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4332122)." (Under Review)
+
++ **Donghua Wang**, Tingsong Jiang, Jialiang Sun, Weien Zhou, Xiaoya Zhang, Zhiqiang Gong, Wen Yao and Xiaoqian Chen. "[**FCA: Learning a 3D Full-coverage Vehicle Camouflage for Multi-view Physical Adversarial Attack**](https://ojs.aaai.org/index.php/AAAI/article/view/20141)."*Proceedings of the AAAI Conference on Artificial Intelligence*, *36*(2), 2414-2422, 2022. [<font color=red>CCF-A</font>], [CODE](https://github.com/winterwindwang/Full-coverage-camouflage-adversarial-attack)
++ **Donghua Wang**, Li Dong, Rangding Wang, Diqun Yan. "[**Fast speech adversarial example generation for keyword spotting system with conditional GAN**](https://www.sciencedirect.com/science/article/pii/S0140366421003042)". *Computer Communications*, 2021: 145-156. [<font color=red>CCF-C</font>], [CODE](https://github.com/winterwindwang/KWSAttackAdvCGAN)
++ **Donghua Wang**, Rangding Wang, Li Dong, Diqun Yan, Yiming Ren. "[**Efficient generation of speech adversarial examples with generative model**](https://link.springer.com/chapter/10.1007/978-3-030-69449-4_19)." *Digital Forensics and Watermarking: 19th International Workshop*, IWDW 2020. 
++ **Donghua Wang**, Rangding Wang, Li Dong, Diqun Yan, Xueyuan Zhang, Yongkang Gong. "[**Adversarial examples attack and countermeasure for speech recognition system: A survey**](https://link.springer.com/chapter/10.1007/978-981-15-9129-7_31)"  *Proceedings of Security and Privacy in Digital* Economy, vol 1268, 2020. 
++ **Donghua Wang**, Li Dong, Rangding Wang, Diqun Yan, Jie Wang. "[**Targeted speech adversarial example generation with generative adversarial network**](https://ieeexplore.ieee.org/abstract/document/9129727/)." *IEEE Access*, 2020: 124503-124513.
 
 ### <span style="font-family:Georgia;font-size:20px;color:#262626">INTERESTS</span>
 
@@ -70,7 +70,8 @@ layout: post
 
 ### <span style="font-family:Georgia;font-size:20px;color:#262626">Project & Competition</span>
 
->+ <div id="expand-box-header">
->      <span style="font-size:13px;font-family:Open Sans;font-weight:bold;color:#1d824c;">Firt Prize. </span>
->  	<span style="font-size:13px;font-family:Open Sans;font-weight:bold;color:#595959;">The 17th China Post-Graduate Mathematical Contest in Modeling (2020)</span>
->  </div>
++ <div id="expand-box-header">
+      <span style="font-size:13px;font-family:Open Sans;font-weight:bold;color:#1d824c;">Firt Prize. </span>
+  	<span style="font-size:13px;font-family:Open Sans;font-weight:bold;color:#595959;">The 17th China Post-Graduate Mathematical Contest in Modeling (2020)</span>
+  </div>
+
