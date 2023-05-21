@@ -26,29 +26,23 @@ layout: post
 
 ### <span style="font-family:Georgia;font-size:20px;color:#262626">EDUCATION</span>
 
-<div id="expand-box-header">
-<span style="font-size:16px;font-family:Open Sans;font-weight:bold;color:#1d824c;">Zhejiang University</span>
-<span style="font-size:13px;font-family:Open Sans;font-weight:bold;color:#595959;">SEPTEMBER 2021–Present</span><br>
-<span style="font-size:13px;font-family:Open Sans;color:#595959;">Puring Ph.D. Degress in College of Computer Science and Technology</span><br>
-</div>
-
------
-
-<div id="expand-box-header">
-    <span style="font-size:16px;font-family:Open Sans;font-weight:bold;color:#1d824c;">Ningbo University </span>
-   <span style="font-size:13px;font-family:Open Sans;font-weight:bold;color:#595959;">SEPTEMBER 2018–JUNE 2021</span><br>
-    <span style="font-size:13px;font-family:Open Sans;color:#595959;"> Received the M.S. Degree in Computer Applied Technology.</span><br>
-</div>
-
-----
-
-<div id="expand-box-header">
-    <span style="font-size:16px;font-family:Open Sans;font-weight:bold;color:#1d824c;">Jiangxi Normal University </span>
-   <span style="font-size:13px;font-family:Open Sans;font-weight:bold;color:#595959;">SEPTEMBER 2014–JUNE 2018</span><br>
-    <span style="font-size:13px;font-family:Open Sans;color:#595959;"> Received the B.S. Degree in Software Enginner.</span><br>
-</div>
-
-----
+> <div id="expand-box-header">
+> <span style="font-size:16px;font-family:Open Sans;font-weight:bold;color:#1d824c;">Zhejiang University</span>
+> <span style="font-size:13px;font-family:Open Sans;font-weight:bold;color:#595959;">SEPTEMBER 2021–Present</span><br>
+> <span style="font-size:13px;font-family:Open Sans;color:#595959;">Puring Ph.D. Degress in College of Computer Science and Technology</span><br>
+> </div>
+>
+> <div id="expand-box-header">
+>     <span style="font-size:16px;font-family:Open Sans;font-weight:bold;color:#1d824c;">Ningbo University </span>
+>    <span style="font-size:13px;font-family:Open Sans;font-weight:bold;color:#595959;">SEPTEMBER 2018–JUNE 2021</span><br>
+>     <span style="font-size:13px;font-family:Open Sans;color:#595959;"> Received the M.S. Degree in Computer Applied Technology.</span><br>
+> </div>
+>
+> <div id="expand-box-header">
+>     <span style="font-size:16px;font-family:Open Sans;font-weight:bold;color:#1d824c;">Jiangxi Normal University </span>
+>    <span style="font-size:13px;font-family:Open Sans;font-weight:bold;color:#595959;">SEPTEMBER 2014–JUNE 2018</span><br>
+>     <span style="font-size:13px;font-family:Open Sans;color:#595959;"> Received the B.S. Degree in Software Enginner.</span><br>
+> </div>
 
 ### <span style="font-family:Georgia;font-size:20px;color:#262626">Publication</span>
 
