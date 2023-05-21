@@ -11,7 +11,7 @@ layout: post
         <font size=2.5> | <span style="font-size:13px;">&#x1F4DE;</span> <span style="font-family:Open Sans;font-size:13px;color:#595959;">(+86) xxx-xxxx-xxxx</span><br>
         </font><span style="font-size:13px;">&#x1F4E7;</span> <a href="mailto:923237475@qq.com", style="font-family:Open Sans;font-size:13px;">923237475@qq.com</a>
     	<font size=2.5> | </font><img src="assets/icon/github.svg" width="13px"> <a href="https://github.com/winterwindwang", style="font-family:Open Sans;font-size:13px;">github.com/winterwindwang</a>
-    	<font size=2.5> | </font><img src="assets/icon/linkedin.svg" width="13px"> <a href="https://www.linkedin.com/in/yuchen-shi-0b5a711b0/", style="font-family:Open Sans;font-size:13px;">linkedin.com/in/yuchen-shi-0b5a711b0</a>
+    	<font size=2.5> | </font><img src="assets/icon/avatar_scholar_256.png" width="13px"> <a href="https://www.researchgate.net/profile/Donghua-Wang-4", style="font-family:Open Sans;font-size:13px;">profile/Donghua-Wang-4</a>
     </div>
 </center>
 
