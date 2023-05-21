@@ -50,7 +50,7 @@ layout: post
 
 ----
 
-### <span style="font-family:Georgia;font-size:20px;color:#262626">Publication</span>
+### <span style="font-family:Georgia;font-size:20px;color:#262626">PUBLICATIONS</span>
 
 + **Donghua Wang**,  Wen Yao, Tingsong Jiang, Weien Zhou, Lang Lin and Xiaoqian Chen. "[**A Plug-and-Play Defensive Perturbation for Copyright Protection of DNN-based Applications**](https://arxiv.org/pdf/2304.10679.pdf)." (Under Review)
 + **Donghua Wang** ,  Wen Yao, Tingsong Jiang, Guijian Tang and Xiaoqian Chen. "[**A Survey on Physical Adversarial Attack in Computer Vision**](https://arxiv.org/pdf/2209.14262.pdf)." (Under Review), [Paper List](https://github.com/winterwindwang/Physical-Adversarial-Attacks-Survey)
@@ -68,7 +68,7 @@ layout: post
 - <span style="font-size:13px;font-family:Open Sans;font-weight:bold;color:#1d824c;">Reading. </span>Paper & Book, focusing on AIGC and Mathematical.
 - <span style="font-size:13px;font-family:Open Sans;font-weight:bold;color:#1d824c;">Biking & Football. </span> Biking: average speed 30km/h, longest travel: 200km/day. Football: linkman.
 
-### <span style="font-family:Georgia;font-size:20px;color:#262626">Project & Competition</span>
+### <span style="font-family:Georgia;font-size:20px;color:#262626">PROJECTS & COMPETITIONS</span>
 
 + <div id="expand-box-header">
       <span style="font-size:13px;font-family:Open Sans;font-weight:bold;color:#1d824c;">Firt Prize. </span>
