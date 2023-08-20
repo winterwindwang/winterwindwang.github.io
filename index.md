@@ -43,7 +43,7 @@ layout: post
 
 ### <span style="font-family:Georgia;font-size:20px;color:#262626">PUBLICATIONS</span>
 
-+ **Donghua Wang**,  Wen Yao, Tingsong Jiang, Chao Li and Xiaoqian Chen "[**RFLA: A Stealthy Reflected Light Adversarial Attack in the Physical World**](https://arxiv.org/pdf/2307.07653.pdf)." (Accept by ICCV 2023) [[code](https://github.com/winterwindwang/RFLA)]
++ **Donghua Wang**,  Wen Yao, Tingsong Jiang, Chao Li and Xiaoqian Chen "[**RFLA: A Stealthy Reflected Light Adversarial Attack in the Physical World**](https://arxiv.org/pdf/2307.07653.pdf)." (Accept by ICCV 2023), [[code](https://github.com/winterwindwang/RFLA)]
 + **Donghua Wang**,  Wen Yao, Tingsong Jiang, Weien Zhou, Lang Lin and Xiaoqian Chen. "[**A Plug-and-Play Defensive Perturbation for Copyright Protection of DNN-based Applications**](https://arxiv.org/pdf/2304.10679.pdf)." (Under Review)
 + **Donghua Wang** ,  Wen Yao, Tingsong Jiang, Guijian Tang and Xiaoqian Chen. "[**A Survey on Physical Adversarial Attack in Computer Vision**](https://arxiv.org/pdf/2209.14262.pdf)." (Under Review), [[Paper List](https://github.com/winterwindwang/Physical-Adversarial-Attacks-Survey)]
 
