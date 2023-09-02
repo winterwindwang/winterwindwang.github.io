@@ -184,6 +184,8 @@ keywords: notes
 158. Different body parts such legs, head and muscles are stylized appropriately in accordance with their semantic role, and these styles are blended seamlessly across the surface to form a cohesive texture.
 159. **computationally intensive (expensive) and time consuming  (and costly)**
 160. watermarking is frequently used to prove image ownership as a form of copyright protection.  As such, watermarking methods prioritize robustness over secrecy: messages should be recoverable even after the encoded image is modified or distorted.
+161. In this paper, we describe results of an in-depth analysis of the threat posed to both machines and humans by deep-learning speech synthesis attacks
+162. we **sweep over** three learning rates ∈{0.1，0.01，0.001}
 
 ## 词汇
 
@@ -324,4 +326,10 @@ keywords: notes
 135. progressively 渐进的
 136. A surge of
 137. the penultimate layer 中间层
+138. reminder/following 随后的，后续的
+139. **vanilla** 初始的
+140. sumptuously 极其，非常
+141. attenuations 衰减
+142. surreptitiously 
+143. delineates 
 
