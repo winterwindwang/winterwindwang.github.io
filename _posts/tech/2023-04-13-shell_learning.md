@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ubuntu shell 批处理程序学习
+title: ubuntu shell/window bat 批处理程序学习
 category: 技术
-keywords: ubuntu, shell
+keywords: ubuntu, shell, window, bat
 tags: technical details
 ---
 
@@ -25,8 +25,30 @@ FOR $filename in $DATA_ROOT; do
 done
 ```
 
+# window bat 批处理程序学习
+新建.bat文件以后，需要改变其文件格式以及编码格式，如参考资料2所示
 
+```bat
+@echo off
+set model_names=faster_rcnn mask_rcnn retina_net
+set eval_images_num=20 30 40 50
+set block_type=0 1 2 3 4 5
 
+FOR %%A IN (%model_names%) DO (
+	FOR %%B IN (%eval_images_num%) DO (
+		FOR %%C IN (%block_type%) DO (
+			E:\software\Anaconda3\envs\ml_pytorch3d\python.exe TDE_location_natural_images_open3d_simplify.py --model_name %%A --eval_images %%B --block_idx %%C
+			Echo ************** %%A %%B %%C Done **************
+		)
+	)
+)
+pause
+Rem Echo test #
+
+Rem 注意几点:1、Rem类似于python中的#,作用是注释；2、所有关键词前后都必须加空隔，如果在DO后面不加空格，那么程序将会报"处理时出错 DO(。"。
+暂时只有这个使用的需求，后续需求再补充
+```
 # 参考资料
 
 1. https://juejin.cn/post/7131625896825323550
+2. https://blog.csdn.net/qq_33468857/article/details/88963725
