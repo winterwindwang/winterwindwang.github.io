@@ -332,4 +332,5 @@ keywords: notes
 141. attenuations 衰减
 142. surreptitiously 
 143. delineates 
+144. amounts to   `Eq. 4 amounts to solve a min-max optimization problem`
 
