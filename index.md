@@ -10,7 +10,7 @@ layout: post
         <span style="font-family:Georgia;font-size:42px;color:#262626;font-weight:bold">WANG</span><br>
         <span style="font-size:13px;">&#x1F3D8;</span>
         <span style="font-family:Open Sans;font-size:13px;color:#595959;">Beijing, China</span> | <span style="font-size:13px;">&#x1F4DE;</span> <span style="font-family:Open Sans;font-size:13px;color:#595959;">(+86) xxx-xxxx-xxxx</span><br><span style="font-size:13px;">&#x1F4E7;</span> 
-        <span style="font-family:Open Sans;font-size:13px;">923237475@qq.com</span> | <span><img src="assets/icon/github.svg" width="16px"> <a style="font-family:Open Sans;font-size:13px;" href="https://github.com/winterwindwang">GitHub</a></span> | <span><img src="assets/icon/avatar_scholar_256.png" width="16px"> <a style="font-family:Open Sans;font-size:13px;" href="https://www.researchgate.net/profile/Donghua-Wang-4">Profile</a></span> <br>
+        <span style="font-family:Open Sans;font-size:13px;">923237475@qq.com</span> | <span><img src="assets/icon/github.svg" width="16px"> <div style="flex-direction: row"><a style="font-family:Open Sans;font-size:13px;" href="https://github.com/winterwindwang">GitHub</a></div></span> | <span><img src="assets/icon/avatar_scholar_256.png" width="16px"> <a style="font-family:Open Sans;font-size:13px;" href="https://www.researchgate.net/profile/Donghua-Wang-4">Profile</a></span> <br>
     </div>
 </center>
 
