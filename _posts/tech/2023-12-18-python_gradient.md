@@ -6,8 +6,6 @@ keywords: python, torch
 tags: technical details
 ---
 
-> 。
-
 > 在使用pytorch循环求梯度时，发现以下现象
 
 ```python

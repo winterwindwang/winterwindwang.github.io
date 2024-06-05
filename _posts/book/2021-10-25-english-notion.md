@@ -330,7 +330,14 @@ keywords: notes
 139. **vanilla** 初始的
 140. sumptuously 极其，非常
 141. attenuations 衰减
-142. surreptitiously 
-143. delineates 
-144. amounts to   `Eq. 4 amounts to solve a min-max optimization problem`
+142. surreptitiously 秘密地
+143. delineates   描绘，描述
+144. amounts to  相当于 `Eq. 4 amounts to solve a min-max optimization problem`
+145. holistic *adj.* 全部的
+146. sever  vt. 切断；断绝 vi. 断，裂
+147. inductive *adj.* 诱导的,感应的
+148. the tendency of 趋势
+149. predictive  *adj.* 预言性的,成为前兆的
+150. pitfall  
+151. endow sth with the ability to
 
