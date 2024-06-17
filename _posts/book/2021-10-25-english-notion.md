@@ -340,4 +340,5 @@ keywords: notes
 149. predictive  *adj.* 预言性的,成为前兆的
 150. pitfall  
 151. endow sth with the ability to
+152. prosepective employers 预期雇主
 
